@@ -1,53 +1,66 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
-    float horizontalMove = 0f;
-    public float runSpeed = 40f;
-    public Animator animator;
-    bool jump = false;
-    bool crouch = false;
+    private float _horizontalMove = 0f;
+    public float RunSpeed = 40f;
+    public Animator Animator;
+    private bool _jump;
+    private bool _crouch;
+    private bool _dash;
 
-    void Update()
+    private void Update()
     {
         // horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        horizontalMove = runSpeed;
-        animator.SetFloat("PlayerSpeed", Mathf.Abs(horizontalMove));
+        _horizontalMove = RunSpeed;
+        Animator.SetFloat("PlayerSpeed", Mathf.Abs(_horizontalMove));
         if (Input.GetButtonDown("Jump")){
-            jump = true;
-            animator.SetBool("PlayerJumping", true);
+            _jump = true;
+            Animator.SetBool("PlayerJumping", true);
         }
         if (Input.GetButtonDown("Crouch")){
-            crouch = true;
+            _crouch = true;
             
         } else if(Input.GetButtonUp("Crouch")){
-            crouch = false;
+            _crouch = false;
+        }
+
+        if (Input.GetButtonDown("Dash"))
+        {
+            _dash = true;
+        }
+        else if (Input.GetButtonUp("Dash"))
+        {
+            _dash = false;
         }
 
         // Touch
         if (Input.touchCount > 0) {
             Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width/2 && Input.touchCount < 2) {
-                jump = true;
-                animator.SetBool("PlayerJumping", true);
+            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width/2f && Input.touchCount < 2) {
+                _jump = true;
+                Animator.SetBool("PlayerJumping", true);
 
             }
         }
     }
 
     public void OnLanding(){
-        animator.SetBool("PlayerJumping", false);
+        Animator.SetBool("PlayerJumping", false);
     }
 
     public void OnCrouching(bool isCrouching){
-        animator.SetBool("PlayerCrouching", isCrouching);
+        Animator.SetBool("PlayerCrouching", isCrouching);
     }
 
-    void FixedUpdate(){
-        Controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-        jump = false;
+    public void OnDashing(bool isDashing)
+    {
+        Animator.SetBool("PlayerDashing", isDashing);
+    }
+
+    private void FixedUpdate(){
+        Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
+        _jump = false;
     }
 }
