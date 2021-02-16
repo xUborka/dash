@@ -15,14 +15,18 @@ public class PlayerMovement : MonoBehaviour
         // horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         _horizontalMove = RunSpeed;
         Animator.SetFloat("PlayerSpeed", Mathf.Abs(_horizontalMove));
-        if (Input.GetButtonDown("Jump")){
+        if (Input.GetButtonDown("Jump"))
+        {
             _jump = true;
             Animator.SetBool("PlayerJumping", true);
         }
-        if (Input.GetButtonDown("Crouch")){
+        if (Input.GetButtonDown("Crouch"))
+        {
             _crouch = true;
-            
-        } else if(Input.GetButtonUp("Crouch")){
+
+        }
+        else if (Input.GetButtonUp("Crouch"))
+        {
             _crouch = false;
         }
 
@@ -36,21 +40,24 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Touch
-        if (Input.touchCount > 0) {
+        if (Input.touchCount > 0)
+        {
             Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width/2f && Input.touchCount < 2) {
+            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f && Input.touchCount < 2)
+            {
                 _jump = true;
                 Animator.SetBool("PlayerJumping", true);
-
             }
         }
     }
 
-    public void OnLanding(){
+    public void OnLanding()
+    {
         Animator.SetBool("PlayerJumping", false);
     }
 
-    public void OnCrouching(bool isCrouching){
+    public void OnCrouching(bool isCrouching)
+    {
         Animator.SetBool("PlayerCrouching", isCrouching);
     }
 
@@ -59,7 +66,8 @@ public class PlayerMovement : MonoBehaviour
         Animator.SetBool("PlayerDashing", isDashing);
     }
 
-    private void FixedUpdate(){
+    private void FixedUpdate()
+    {
         Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
         _jump = false;
     }
