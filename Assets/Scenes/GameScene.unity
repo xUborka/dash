@@ -400,8 +400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fea868359f38e43880cc5f0b16fabe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420031}
-  subject: {fileID: 747064130}
+  Cam: {fileID: 519420031}
+  Subject: {fileID: 747064130}
 --- !u!1 &747064128
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,16 +552,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dust: {fileID: 1537587163}
-  m_JumpForce: 500
-  m_CrouchSpeed: 0.4
-  m_MovementSmoothing: 0.05
+  _mJumpForce: 400
+  _mCrouchSpeed: 0.36
+  _mMovementSmoothing: 0.05
   m_AirControl: 0
-  m_WhatIsGround:
+  _mWhatIsGround:
     serializedVersion: 2
     m_Bits: 567
-  m_GroundCheck: {fileID: 1519769289}
-  m_CeilingCheck: {fileID: 1470807216}
-  m_CrouchDisableCollider: {fileID: 747064132}
+  _mGroundCheck: {fileID: 1519769289}
+  _mCeilingCheck: {fileID: 1470807216}
+  _mCrouchDisableCollider: {fileID: 747064132}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -703,6 +703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746317575079329721, guid: 98b81fed6a903d34fa87a7642df8e5f2,
+        type: 3}
+      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.size
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5746317575079329721, guid: 98b81fed6a903d34fa87a7642df8e5f2,
         type: 3}
@@ -913,11 +918,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[20].y
       value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5746317575079329721, guid: 98b81fed6a903d34fa87a7642df8e5f2,
-        type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.size
-      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5746317575079329721, guid: 98b81fed6a903d34fa87a7642df8e5f2,
         type: 3}
@@ -1374,6 +1374,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6104,9 +6105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c130d263d24477e47958f8e501d81907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: {fileID: 5746317576468675717, guid: 98b81fed6a903d34fa87a7642df8e5f2, type: 3}
-  level2: {fileID: 1658387213764075383, guid: 02d96b37e0ea82d479b8b049424607b6, type: 3}
-  player: {fileID: 747064130}
+  _level: {fileID: 934325744}
+  _level2: {fileID: 598897570334932872}
+  _player: {fileID: 747064130}
 --- !u!4 &2102358584
 Transform:
   m_ObjectHideFlags: 0
@@ -6141,6 +6142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1658387212995484747, guid: 02d96b37e0ea82d479b8b049424607b6,
         type: 3}
+      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658387212995484747, guid: 02d96b37e0ea82d479b8b049424607b6,
+        type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[0].x
       value: -3.0000293
       objectReference: {fileID: 0}
@@ -6168,11 +6174,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[3].y
       value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658387212995484747, guid: 02d96b37e0ea82d479b8b049424607b6,
-        type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.size
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1658387212995484747, guid: 02d96b37e0ea82d479b8b049424607b6,
         type: 3}
