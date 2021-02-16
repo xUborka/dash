@@ -1,8 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Numerics;
+using UnityEngine;
 using UnityEngine.Events;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class CharacterController2D : MonoBehaviour
 {
+    public ParticleSystem Dust;
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
@@ -38,14 +42,11 @@ public class CharacterController2D : MonoBehaviour
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
-		if (OnLandEvent == null)
-			OnLandEvent = new UnityEvent();
+		OnLandEvent = OnLandEvent ?? new UnityEvent();
 
-		if (OnCrouchEvent == null)
-			OnCrouchEvent = new BoolEvent();
+		OnCrouchEvent = OnCrouchEvent ?? new BoolEvent();
 
-        if (OnDashEvent == null)
-            OnDashEvent = new BoolEvent();
+        OnDashEvent = OnDashEvent ?? new BoolEvent();
 	}
 
 	private void FixedUpdate()
@@ -150,15 +151,21 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
+
 		// If the player should jump...
 		if (m_Grounded && jump)
-		{
-			// Add a vertical force to the player.
-			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+        {
+            Jump(new Vector2(0f, m_JumpForce));
         }
 	}
 
+    private void Jump(Vector2 force)
+    {
+        Dust.Play();
+		// Add a vertical force to the player.
+		m_Grounded = false;
+        m_Rigidbody2D.AddForce(force);
+	}
 
 	private void Flip()
 	{
@@ -170,4 +177,9 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+    private void CreateDust()
+    {
+		Dust.Play();
+    }
 }
