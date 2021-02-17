@@ -871,16 +871,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dust: {fileID: 1537587163}
-  _mJumpForce: 500
-  _mCrouchSpeed: 0.4
-  _mMovementSmoothing: 0.05
-  m_AirControl: 0
-  _mWhatIsGround:
+  _jumpForce: 600
+  _crouchSpeed: 0.36
+  _movementSmoothing: 0.05
+  _airControl: 0
+  _whatIsGround:
     serializedVersion: 2
-    m_Bits: 567
-  _mGroundCheck: {fileID: 1519769289}
-  _mCeilingCheck: {fileID: 1470807216}
-  _mCrouchDisableCollider: {fileID: 747064132}
+    m_Bits: 512
+  _groundCheck: {fileID: 1519769289}
+  _ceilingCheck: {fileID: 1470807216}
+  _crouchDisableCollider: {fileID: 0}
+  _fallMultiplier: 2.5
+  _lowJumpMultiplier: 2
+  _hangTime: 1
+  _jumpBufferLength: 0.2
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
