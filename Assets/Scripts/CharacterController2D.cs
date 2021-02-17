@@ -63,7 +63,7 @@ public class CharacterController2D : MonoBehaviour
         OnDashEvent = OnDashEvent ?? new BoolEvent();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         var wasGrounded = _grounded;
         _grounded = false;
