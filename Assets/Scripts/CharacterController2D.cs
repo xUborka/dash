@@ -26,6 +26,13 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float _hangTime = 0.1f;
     [SerializeField] private float _jumpBufferLength = 0.1f;
 
+    [Header("Dash")]
+    
+    [SerializeField] private float _startDashTime = 0.1f;
+    [SerializeField] private float _dashSpeed = 50;
+
+    private float _dashTime;
+
     private float _hangTimeCounter;
     private float _jumpBufferCounter;
 
@@ -49,8 +56,11 @@ public class CharacterController2D : MonoBehaviour
     private bool _wasDashing;
 
     private bool CanJump => _jumpBufferCounter > 0 && _hangTimeCounter > 0f;
-
-    private float _tempY = 1f;
+    
+    private void Start()
+    {
+        _dashTime = _startDashTime;
+    }
 
     private void Awake()
     {
@@ -127,30 +137,38 @@ public class CharacterController2D : MonoBehaviour
                 }
             }
 
-            if (dash)
-            {
-                if (!_wasDashing)
-                {
-                    _wasDashing = true;
-                    OnDashEvent.Invoke(true);
-                }
-                move *= 2.0f;
-                _tempY = 1.2f;
+            // Move the character by finding the target velocity
+            Vector3 targetVelocity = new Vector2(move * 10f, _rb.velocity.y);
+            // And then smoothing it out and applying it to the character
+            _rb.velocity = Vector3.SmoothDamp(_rb.velocity, targetVelocity, ref _velocity, _movementSmoothing);
+        }
 
+        if (dash)
+        {
+            if (!_wasDashing)
+            {
+                _wasDashing = true;
+                OnDashEvent.Invoke(true);
+            }
+
+            if (_dashTime <= 0)
+            {
+                _dashTime = _startDashTime;
+                _rb.velocity = Vector2.right * 10f;
             }
             else
             {
-                if (_wasDashing)
-                {
-                    _wasDashing = false;
-                    OnDashEvent.Invoke(false);
-                }
+                _dashTime -= Time.fixedDeltaTime;
+                _rb.velocity = Vector2.right * _dashSpeed;
             }
-
-            // Move the character by finding the target velocity
-            Vector3 targetVelocity = new Vector2(move * 10f, _tempY * _rb.velocity.y);
-            // And then smoothing it out and applying it to the character
-            _rb.velocity = Vector3.SmoothDamp(_rb.velocity, targetVelocity, ref _velocity, _movementSmoothing);
+        }
+        else
+        {
+            if (_wasDashing)
+            {
+                _wasDashing = false;
+                OnDashEvent.Invoke(false);
+            }
         }
 
         if (_rb.velocity.y < 0)
@@ -183,7 +201,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void Jump(Vector2 force)
     {
-        Dust.Play();
+        CreateDust();
         // Add a vertical force to the player.
         _grounded = false;
         _rb.AddForce(force);
