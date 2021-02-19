@@ -4,36 +4,31 @@ public class Parallax : MonoBehaviour
 {
     public Camera Cam;
     public Transform Subject;
-    private Vector2 _startPosition;
-    private float _startZ;
-    private Vector2 Travel => (Vector2)Cam.transform.position - _startPosition;
+    private float my_start_position;
+    private Vector2 camera_start_position;
+    private Vector2 Travel => (Vector2)Cam.transform.position - camera_start_position;
     private float DistFromSubject => transform.position.z - Subject.position.z;
     private float ClippingPlane => Cam.transform.position.z + (DistFromSubject > 0 ? Cam.farClipPlane : Cam.nearClipPlane);
     private float ParallaxFactor => Mathf.Abs(DistFromSubject) / ClippingPlane;
 
-    // Test
-    private float length, startpos;
+    private float renderer_x_bounds;
 
     private void Start()
     {
-        _startPosition = Cam.transform.position;
-        _startZ = transform.position.z;
-        
-        
-        // Test
-        startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        my_start_position = transform.position.x;
+        camera_start_position = Cam.transform.position;
+        renderer_x_bounds = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        Vector2 newPos = (Vector2)transform.position - Travel * (1-ParallaxFactor);
-        transform.position = new Vector3(newPos.x, newPos.y, _startZ);
-        _startPosition = (Vector2)Cam.transform.position;
-        
-        
-        // Test
-        print(Cam.transform.position.x.ToString() + ' ' + newPos.x.ToString() + ' ' + length.ToString());
-        if (Cam.transform.position.x > newPos.x + length) transform.position = new Vector3(newPos.x+length*2, newPos.y, _startZ);
+        float temp = Cam.transform.position.x * (1-ParallaxFactor);
+        float movement = Cam.transform.position.x * ParallaxFactor;
+        Vector3 next_pos = new Vector3(my_start_position+movement, transform.position.y, transform.position.z);
+        if (temp > my_start_position + renderer_x_bounds)
+        {
+            my_start_position += renderer_x_bounds;
+        }
+        transform.position = next_pos;
     }
 }
