@@ -10,6 +10,8 @@ public class LevelGenerator : MonoBehaviour
     private Vector3 _lastEnd;
     private Transform _refLastLevel;
 
+    public List<Transform> platform_references;
+
     private void Awake()
     {
         PLAYER_DIST_TO_SPAWN = 15;
@@ -22,6 +24,7 @@ public class LevelGenerator : MonoBehaviour
         _lastEnd = _refLastLevel.Find("EndPosition").position;
         var startPos = Vector3Int.FloorToInt(_refLastLevel.Find("StartPosition").position);
         _refLastLevel = Instantiate(next_levels[Random.Range(0, next_levels.Count)], prevPos, Quaternion.identity);
+        platform_references.Add(_refLastLevel);
     }
 
     // Update is called once per frame

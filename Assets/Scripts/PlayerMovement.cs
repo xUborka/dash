@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
     private bool _jump;
     private bool _crouch;
     private bool _dash;
+    private bool _enabled = true;
 
     private void Update()
     {
-        // horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if (!_enabled){
+            return;
+        }
         _horizontalMove = RunSpeed;
         Animator.SetFloat("PlayerSpeed", Mathf.Abs(_horizontalMove));
         if (Input.GetButtonDown("Jump"))
@@ -68,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!_enabled){
+            return;
+        }
         Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
         _jump = false;
     }
