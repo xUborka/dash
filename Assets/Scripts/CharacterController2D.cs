@@ -13,7 +13,7 @@ public class CharacterController2D : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float _jumpForce = 700f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float _crouchSpeed = .4f;           // Amount of maxSpeed applied to crouching movement. 1 = 100%
-    [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .05f;  // How much to smooth out the movement
+    [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .0f;  // How much to smooth out the movement
     [SerializeField] private LayerMask _whatIsGround;                          // A mask determining what is ground to the character
     [SerializeField] private Transform _groundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform _ceilingCheck;                          // A position marking where to check for ceilings
@@ -21,13 +21,13 @@ public class CharacterController2D : MonoBehaviour
 
 
     [Header("Jump")]
-    [SerializeField] private float _hangTime = 0.1f;
+    [SerializeField] private float _hangTime = 0.5f;
     [SerializeField] private float _jumpBufferLength = 0.1f;
 
     [Header("Dash")]
 
-    [SerializeField] private float _startDashTime = 0.1f;
-    [SerializeField] private float _dashSpeed = 30;
+    [SerializeField] private float _startDashTime = 0.15f;
+    [SerializeField] private float _dashSpeed = 50;
     private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
 
     private float _dashTime;

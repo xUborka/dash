@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Follow: {fileID: 747064130}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
+    OrthographicSize: 6
     NearClipPlane: 0.3
     FarClipPlane: 100
     Dutch: 0
@@ -507,7 +507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276111700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 1, z: -10}
+  m_LocalPosition: {x: 10.5, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 1486416865}
@@ -795,7 +795,7 @@ Camera:
   far clip plane: 100
   field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -819,7 +819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 1, z: -10}
+  m_LocalPosition: {x: 10.5, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484559076}
@@ -1076,19 +1076,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dust: {fileID: 1537587163}
   _jumpForce: 700
-  _crouchSpeed: 0.36
+  _crouchSpeed: 0.4
   _movementSmoothing: 0
-  _airControl: 0
   _whatIsGround:
     serializedVersion: 2
     m_Bits: 512
   _groundCheck: {fileID: 1519769289}
   _ceilingCheck: {fileID: 1470807216}
   _crouchDisableCollider: {fileID: 747064132}
-  _fallMultiplier: 2.5
-  _lowJumpMultiplier: 2
-  _hangTime: 1
-  _jumpBufferLength: 10
+  _hangTime: 0.5
+  _jumpBufferLength: 0.1
   _startDashTime: 0.1
   _dashSpeed: 50
   OnLandEvent:
@@ -1162,7 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 747064133}
-  RunSpeed: 40
+  RunSpeed: 50
   Animator: {fileID: 747064136}
 --- !u!95 &747064136
 Animator:
@@ -1195,8 +1192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fa0d1d078b3ad4f80cf19ea7ba9157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 3
-  lowJumpMultiplier: 2
+  fallMultiplier: 5
+  lowJumpMultiplier: 2.5
 --- !u!1 &761585211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,7 +1531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 7.5, y: 0, z: -10}
+  m_FollowOffset: {x: 8.5, y: 0, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 0
@@ -1637,7 +1634,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private bool _dash;
     private bool _enabled = false;
 
-    public float TouchTimeout = 0.1f;
-
     public void EnableMovement()
     {
         _enabled = true;
