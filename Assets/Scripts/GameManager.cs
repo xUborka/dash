@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [Header("GameOver")]
     [SerializeField] private GameObject game_over_screen;
+    [SerializeField] private LayerMask danger_layer;
     private bool gameHasEnded;
     private float restart_delay = 2.0f;
     private float death_player_platform_distance = 10.0f;
@@ -45,11 +46,20 @@ public class GameManager : MonoBehaviour
                 countdown_over = true;
                 countdown_screen.SetActive(false);
                 scoreScreen.SetActive(true);
-                Player.GetComponent<PlayerMovement>().EnableMovement();
+                Player.GetComponent<PlayerMovement>().SetMovement(true);
             }
         }
 
-        // Game Over
+        // Game Over by spikes
+        Transform gcheck = Player.Find("GroundCheck"); // HACK ?
+        var colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.2f, danger_layer);
+        if (colliders.Length > 0){
+            Player.GetComponent<PlayerMovement>().SetMovement(false);
+            Player.GetComponent<PlayerMovement>().KillPlayer();
+            EndGame(); //
+        }
+
+        // Game Over by falling
         var min_y = double.PositiveInfinity;
         foreach (Transform platform in LevelGen.platform_references)
         {

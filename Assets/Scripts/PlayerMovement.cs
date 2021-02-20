@@ -11,9 +11,16 @@ public class PlayerMovement : MonoBehaviour
     private bool _dash;
     private bool _enabled = false;
 
-    public void EnableMovement()
+    public void SetMovement(bool val)
     {
-        _enabled = true;
+        _enabled = val;
+    }
+
+    public void KillPlayer(){
+        Animator.SetBool("PlayerJumping", false);
+        Animator.SetBool("PlayerDied", true);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 500.0f));
     }
 
     private void Update()
