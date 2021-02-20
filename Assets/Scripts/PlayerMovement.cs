@@ -4,12 +4,16 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
     private float _horizontalMove = 0f;
-    public float RunSpeed = 40f;
+    public float RunSpeed = 50;
     public Animator Animator;
     private bool _jump;
     private bool _crouch;
     private bool _dash;
-    private bool _enabled = true;
+    private bool _enabled = false;
+
+    public void EnableMovement(){
+        _enabled = true;
+    }
 
     private void Update()
     {
@@ -46,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f && Input.touchCount < 2)
+            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f && Input.touchCount == 1)
             {
                 _jump = true;
                 Animator.SetBool("PlayerJumping", true);

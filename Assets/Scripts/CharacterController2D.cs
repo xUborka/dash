@@ -11,25 +11,24 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D _rb;
 
     [Header("Movement")]
-    [SerializeField] private float _jumpForce = 600f;                          // Amount of force added when the player jumps.
-    [Range(0, 1)] [SerializeField] private float _crouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
+    [SerializeField] private float _jumpForce = 700f;                          // Amount of force added when the player jumps.
+    [Range(0, 1)] [SerializeField] private float _crouchSpeed = .4f;           // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .05f;  // How much to smooth out the movement
-    [SerializeField] private bool _airControl = false;                         // Whether or not a player can steer while jumping;
     [SerializeField] private LayerMask _whatIsGround;                          // A mask determining what is ground to the character
     [SerializeField] private Transform _groundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform _ceilingCheck;                          // A position marking where to check for ceilings
     [SerializeField] private Collider2D _crouchDisableCollider;                // A collider that will be disabled when crouching
 
+
     [Header("Jump")]
-    [SerializeField] private float _fallMultiplier = 2.5f;
-    [SerializeField] private float _lowJumpMultiplier = 2f;
     [SerializeField] private float _hangTime = 0.1f;
     [SerializeField] private float _jumpBufferLength = 0.1f;
 
     [Header("Dash")]
-    
+
     [SerializeField] private float _startDashTime = 0.1f;
-    [SerializeField] private float _dashSpeed = 50;
+    [SerializeField] private float _dashSpeed = 20;
+    private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
 
     private float _dashTime;
 
@@ -39,7 +38,7 @@ public class CharacterController2D : MonoBehaviour
     private const float KGroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private bool _grounded;            // Whether or not the player is grounded.
     private const float KCeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
-    
+
     private Vector3 _velocity = Vector3.zero;
 
     [Header("Events")]
@@ -52,11 +51,11 @@ public class CharacterController2D : MonoBehaviour
 
     public BoolEvent OnCrouchEvent;
     public BoolEvent OnDashEvent;
-    private bool _wasCrouching;
-    private bool _wasDashing;
+    private bool _wasCrouching = false;
+    private bool _wasDashing = false;
 
     private bool CanJump => _jumpBufferCounter > 0 && _hangTimeCounter > 0f;
-    
+
     private void Start()
     {
         _dashTime = _startDashTime;
@@ -87,7 +86,9 @@ public class CharacterController2D : MonoBehaviour
             {
                 _grounded = true;
                 if (!wasGrounded)
+                {
                     OnLandEvent.Invoke();
+                }
             }
         }
     }
@@ -105,7 +106,7 @@ public class CharacterController2D : MonoBehaviour
         }
 
         //only control the player if grounded or airControl is turned on
-        if (_grounded || _airControl)
+        if (_grounded)
         {
             _hangTimeCounter = _hangTime;
             // If crouching
@@ -143,42 +144,7 @@ public class CharacterController2D : MonoBehaviour
             _rb.velocity = Vector3.SmoothDamp(_rb.velocity, targetVelocity, ref _velocity, _movementSmoothing);
         }
 
-        if (dash)
-        {
-            if (!_wasDashing)
-            {
-                _wasDashing = true;
-                OnDashEvent.Invoke(true);
-            }
-
-            if (_dashTime <= 0)
-            {
-                _dashTime = _startDashTime;
-                _rb.velocity = Vector2.right * 10f;
-            }
-            else
-            {
-                _dashTime -= Time.fixedDeltaTime;
-                _rb.velocity = Vector2.right * _dashSpeed;
-            }
-        }
-        else
-        {
-            if (_wasDashing)
-            {
-                _wasDashing = false;
-                OnDashEvent.Invoke(false);
-            }
-        }
-
-        if (_rb.velocity.y < 0)
-        {
-            _rb.velocity += Vector2.up * Physics2D.gravity.y * (_fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (_rb.velocity.y > 0 && !jump)
-        {
-            _rb.velocity += Vector2.up * Physics2D.gravity.y * (_lowJumpMultiplier - 1) * Time.deltaTime;
-        }
+        Dash(dash);
 
         _hangTimeCounter -= Time.fixedDeltaTime;
 
@@ -196,6 +162,43 @@ public class CharacterController2D : MonoBehaviour
         {
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
+        }
+    }
+
+    private void Dash(bool dash)
+    {
+        if (dash)
+        {
+            if (!_wasDashing)
+            {
+                velocity_before_dash = _rb.velocity;
+                _wasDashing = true;
+                OnDashEvent.Invoke(true);
+            }
+
+            if (_dashTime <= 0.0f)
+            {
+                _rb.velocity = new Vector2(velocity_before_dash.x, _rb.velocity.y);
+                dash = false;
+                OnDashEvent.Invoke(false);
+            }
+            else
+            {
+                _dashTime -= Time.fixedDeltaTime;
+                _rb.velocity = Vector2.right * _dashSpeed;
+            }
+        }
+        else
+        {
+            if (_grounded){
+                _wasDashing = false;
+                _dashTime = _startDashTime;
+            }
+            if (_wasDashing)
+            {
+                _rb.velocity = new Vector2(velocity_before_dash.x, _rb.velocity.y);
+                OnDashEvent.Invoke(false);
+            }
         }
     }
 

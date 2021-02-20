@@ -1,11 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public Transform Player;
     public LevelGenerator LevelGen;
 
+    // Countdown Related Stuff
+    public GameObject countdown_screen;
+    public GameObject countdown_text;
+    public float countdown_value = 3.9f;
+    private bool countdown_over = false;
+
+
+    // Game Over Screen Related Stuff
     public GameObject game_over_screen;
     private bool gameHasEnded = false;
     private float restart_delay = 2.0f;
@@ -14,10 +23,25 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LevelGen = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
+        countdown_screen.SetActive(true);
     }
 
     private void Update()
     {
+        // Countdown
+        if (!countdown_over){
+            countdown_value -= Time.deltaTime;
+            countdown_text.GetComponent<TextMeshProUGUI>().SetText(Mathf.FloorToInt(countdown_value).ToString());
+
+            if (countdown_value <= 0.1f){
+                countdown_over = true;
+                countdown_screen.SetActive(false);
+                Player.GetComponent<PlayerMovement>().EnableMovement();
+            }
+        }
+
+
+        // Game Over
         double min_y = double.PositiveInfinity;
         foreach (Transform platform in LevelGen.platform_references)
         {
