@@ -4,20 +4,22 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public Transform Player;
-    public LevelGenerator LevelGen;
+    [Header("General")]
+    [SerializeField] private Transform Player;
+    [SerializeField] private LevelGenerator LevelGen;
 
-    // Countdown Related Stuff
-    public GameObject countdown_screen;
-    public GameObject countdown_text;
-    public GameObject scoreText;
-    public GameObject scoreScreen;
-    public float countdown_value = 3.9f;
+    [Header("Score")]
+    [SerializeField] private GameObject scoreScreen;
+    [SerializeField] private GameObject scoreText;
+
+    [Header("Countdown")]
+    [SerializeField] private GameObject countdown_screen;
+    [SerializeField] private GameObject countdown_text;
+    private float countdown_value = 3.9f;
     private bool countdown_over;
 
-
-    // Game Over Screen Related Stuff
-    public GameObject game_over_screen;
+    [Header("GameOver")]
+    [SerializeField] private GameObject game_over_screen;
     private bool gameHasEnded;
     private float restart_delay = 2.0f;
     private float death_player_platform_distance = 10.0f;
@@ -78,7 +80,6 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            // print("GAME OVER");
             game_over_screen.SetActive(true);
             Invoke("Restart", restart_delay);
         }
