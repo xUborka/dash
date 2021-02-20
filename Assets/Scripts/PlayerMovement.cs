@@ -11,13 +11,17 @@ public class PlayerMovement : MonoBehaviour
     private bool _dash;
     private bool _enabled = false;
 
-    public void EnableMovement(){
+    public float TouchTimeout = 0.1f;
+
+    public void EnableMovement()
+    {
         _enabled = true;
     }
 
     private void Update()
     {
-        if (!_enabled){
+        if (!_enabled)
+        {
             return;
         }
         _horizontalMove = RunSpeed;
@@ -49,13 +53,24 @@ public class PlayerMovement : MonoBehaviour
         // Touch
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f && Input.touchCount == 1)
+            // Touch touch = Input.GetTouch(0);
+            foreach (Touch touch in Input.touches)
             {
-                _jump = true;
-                Animator.SetBool("PlayerJumping", true);
+                if (touch.phase == TouchPhase.Began && touch.position.x < Screen.width / 2f)
+                {
+                    print("Jump Pressed!");
+                    _jump = true;
+                    Animator.SetBool("PlayerJumping", true);
+                }
+                if (touch.phase == TouchPhase.Began && touch.position.x > Screen.width / 2f)
+                {
+                    _dash = true;
+                }
             }
         }
+
+        Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
+        _jump = false;
     }
 
     public void OnLanding()
@@ -70,15 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnDashing(bool isDashing)
     {
+        _dash = isDashing;
         Animator.SetBool("PlayerDashing", isDashing);
-    }
-
-    private void FixedUpdate()
-    {
-        if (!_enabled){
-            return;
-        }
-        Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
-        _jump = false;
     }
 }

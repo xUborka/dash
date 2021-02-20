@@ -27,7 +27,7 @@ public class CharacterController2D : MonoBehaviour
     [Header("Dash")]
 
     [SerializeField] private float _startDashTime = 0.1f;
-    [SerializeField] private float _dashSpeed = 20;
+    [SerializeField] private float _dashSpeed = 30;
     private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
 
     private float _dashTime;
@@ -54,7 +54,7 @@ public class CharacterController2D : MonoBehaviour
     private bool _wasCrouching = false;
     private bool _wasDashing = false;
 
-    private bool CanJump => _jumpBufferCounter > 0 && _hangTimeCounter > 0f;
+    private bool CanJump => _jumpBufferCounter > 0.0f && _hangTimeCounter > 0.0f;
 
     private void Start()
     {
