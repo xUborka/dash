@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             game_over_screen.SetActive(true);
+            scoreScreen.SetActive(false);
             Invoke("Restart", restart_delay);
         }
     }

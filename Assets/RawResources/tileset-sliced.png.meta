@@ -773,6 +773,9 @@ TextureImporter:
   - first:
       213: 7422210449594766178
     second: tileset-sliced_128
+  - first:
+      213: -4531488486988327067
+    second: tileset-sliced_129
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1766,7 +1769,7 @@ TextureImporter:
       name: tileset-sliced_41
       rect:
         serializedVersion: 2
-        x: 224
+        x: 192
         y: 272
         width: 16
         height: 16
@@ -1787,7 +1790,7 @@ TextureImporter:
       name: tileset-sliced_42
       rect:
         serializedVersion: 2
-        x: 256
+        x: 224
         y: 272
         width: 16
         height: 16
@@ -1808,7 +1811,7 @@ TextureImporter:
       name: tileset-sliced_43
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 272
         width: 16
         height: 16
@@ -1829,7 +1832,7 @@ TextureImporter:
       name: tileset-sliced_44
       rect:
         serializedVersion: 2
-        x: 352
+        x: 320
         y: 272
         width: 16
         height: 16
@@ -1850,8 +1853,8 @@ TextureImporter:
       name: tileset-sliced_45
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
+        x: 352
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -1871,7 +1874,7 @@ TextureImporter:
       name: tileset-sliced_46
       rect:
         serializedVersion: 2
-        x: 48
+        x: 16
         y: 240
         width: 16
         height: 16
@@ -1892,7 +1895,7 @@ TextureImporter:
       name: tileset-sliced_47
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 240
         width: 16
         height: 16
@@ -1913,7 +1916,7 @@ TextureImporter:
       name: tileset-sliced_48
       rect:
         serializedVersion: 2
-        x: 112
+        x: 80
         y: 240
         width: 16
         height: 16
@@ -1934,7 +1937,7 @@ TextureImporter:
       name: tileset-sliced_49
       rect:
         serializedVersion: 2
-        x: 144
+        x: 112
         y: 240
         width: 16
         height: 16
@@ -1955,7 +1958,7 @@ TextureImporter:
       name: tileset-sliced_50
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 240
         width: 16
         height: 16
@@ -1976,7 +1979,7 @@ TextureImporter:
       name: tileset-sliced_51
       rect:
         serializedVersion: 2
-        x: 240
+        x: 176
         y: 240
         width: 16
         height: 16
@@ -1997,7 +2000,7 @@ TextureImporter:
       name: tileset-sliced_52
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 240
         width: 16
         height: 16
@@ -2018,7 +2021,7 @@ TextureImporter:
       name: tileset-sliced_53
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 240
         width: 16
         height: 16
@@ -2039,8 +2042,8 @@ TextureImporter:
       name: tileset-sliced_54
       rect:
         serializedVersion: 2
-        x: 240
-        y: 208
+        x: 304
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -2060,7 +2063,7 @@ TextureImporter:
       name: tileset-sliced_55
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 208
         width: 16
         height: 16
@@ -2081,7 +2084,7 @@ TextureImporter:
       name: tileset-sliced_56
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 208
         width: 16
         height: 16
@@ -2102,8 +2105,8 @@ TextureImporter:
       name: tileset-sliced_57
       rect:
         serializedVersion: 2
-        x: 16
-        y: 192
+        x: 304
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -2123,7 +2126,7 @@ TextureImporter:
       name: tileset-sliced_58
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 192
         width: 16
         height: 16
@@ -2144,7 +2147,7 @@ TextureImporter:
       name: tileset-sliced_59
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 192
         width: 16
         height: 16
@@ -2165,7 +2168,7 @@ TextureImporter:
       name: tileset-sliced_60
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 192
         width: 16
         height: 16
@@ -2186,7 +2189,7 @@ TextureImporter:
       name: tileset-sliced_61
       rect:
         serializedVersion: 2
-        x: 112
+        x: 80
         y: 192
         width: 16
         height: 16
@@ -2207,7 +2210,7 @@ TextureImporter:
       name: tileset-sliced_62
       rect:
         serializedVersion: 2
-        x: 160
+        x: 112
         y: 192
         width: 16
         height: 16
@@ -2228,7 +2231,7 @@ TextureImporter:
       name: tileset-sliced_63
       rect:
         serializedVersion: 2
-        x: 176
+        x: 160
         y: 192
         width: 16
         height: 16
@@ -2249,8 +2252,8 @@ TextureImporter:
       name: tileset-sliced_64
       rect:
         serializedVersion: 2
-        x: 32
-        y: 176
+        x: 176
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -2270,7 +2273,7 @@ TextureImporter:
       name: tileset-sliced_65
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 176
         width: 16
         height: 16
@@ -2291,7 +2294,7 @@ TextureImporter:
       name: tileset-sliced_66
       rect:
         serializedVersion: 2
-        x: 240
+        x: 64
         y: 176
         width: 16
         height: 16
@@ -2312,7 +2315,7 @@ TextureImporter:
       name: tileset-sliced_67
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 176
         width: 16
         height: 16
@@ -2333,7 +2336,7 @@ TextureImporter:
       name: tileset-sliced_68
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 176
         width: 16
         height: 16
@@ -2354,8 +2357,8 @@ TextureImporter:
       name: tileset-sliced_69
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 304
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -2375,7 +2378,7 @@ TextureImporter:
       name: tileset-sliced_70
       rect:
         serializedVersion: 2
-        x: 144
+        x: 112
         y: 144
         width: 16
         height: 16
@@ -2396,7 +2399,7 @@ TextureImporter:
       name: tileset-sliced_71
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 144
         width: 16
         height: 16
@@ -2417,7 +2420,7 @@ TextureImporter:
       name: tileset-sliced_72
       rect:
         serializedVersion: 2
-        x: 208
+        x: 176
         y: 144
         width: 16
         height: 16
@@ -2438,8 +2441,8 @@ TextureImporter:
       name: tileset-sliced_73
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
+        x: 208
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -2459,7 +2462,7 @@ TextureImporter:
       name: tileset-sliced_74
       rect:
         serializedVersion: 2
-        x: 144
+        x: 112
         y: 128
         width: 16
         height: 16
@@ -2480,7 +2483,7 @@ TextureImporter:
       name: tileset-sliced_75
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 128
         width: 16
         height: 16
@@ -2501,7 +2504,7 @@ TextureImporter:
       name: tileset-sliced_76
       rect:
         serializedVersion: 2
-        x: 240
+        x: 176
         y: 128
         width: 16
         height: 16
@@ -2522,7 +2525,7 @@ TextureImporter:
       name: tileset-sliced_77
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 128
         width: 16
         height: 16
@@ -2543,7 +2546,7 @@ TextureImporter:
       name: tileset-sliced_78
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 128
         width: 16
         height: 16
@@ -2564,8 +2567,8 @@ TextureImporter:
       name: tileset-sliced_79
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 304
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -2585,7 +2588,7 @@ TextureImporter:
       name: tileset-sliced_80
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 112
         width: 16
         height: 16
@@ -2606,7 +2609,7 @@ TextureImporter:
       name: tileset-sliced_81
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 112
         width: 16
         height: 16
@@ -2627,7 +2630,7 @@ TextureImporter:
       name: tileset-sliced_82
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 112
         width: 16
         height: 16
@@ -2648,7 +2651,7 @@ TextureImporter:
       name: tileset-sliced_83
       rect:
         serializedVersion: 2
-        x: 144
+        x: 80
         y: 112
         width: 16
         height: 16
@@ -2669,8 +2672,8 @@ TextureImporter:
       name: tileset-sliced_84
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 144
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -2690,7 +2693,7 @@ TextureImporter:
       name: tileset-sliced_85
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 96
         width: 16
         height: 16
@@ -2711,7 +2714,7 @@ TextureImporter:
       name: tileset-sliced_86
       rect:
         serializedVersion: 2
-        x: 176
+        x: 64
         y: 96
         width: 16
         height: 16
@@ -2732,7 +2735,7 @@ TextureImporter:
       name: tileset-sliced_87
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 96
         width: 16
         height: 16
@@ -2753,7 +2756,7 @@ TextureImporter:
       name: tileset-sliced_88
       rect:
         serializedVersion: 2
-        x: 240
+        x: 224
         y: 96
         width: 16
         height: 16
@@ -2774,7 +2777,7 @@ TextureImporter:
       name: tileset-sliced_89
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 96
         width: 16
         height: 16
@@ -2795,7 +2798,7 @@ TextureImporter:
       name: tileset-sliced_90
       rect:
         serializedVersion: 2
-        x: 288
+        x: 272
         y: 96
         width: 16
         height: 16
@@ -2816,7 +2819,7 @@ TextureImporter:
       name: tileset-sliced_91
       rect:
         serializedVersion: 2
-        x: 304
+        x: 288
         y: 96
         width: 16
         height: 16
@@ -2837,8 +2840,8 @@ TextureImporter:
       name: tileset-sliced_92
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 304
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -2858,7 +2861,7 @@ TextureImporter:
       name: tileset-sliced_93
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 80
         width: 16
         height: 16
@@ -2879,7 +2882,7 @@ TextureImporter:
       name: tileset-sliced_94
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 80
         width: 16
         height: 16
@@ -2900,7 +2903,7 @@ TextureImporter:
       name: tileset-sliced_95
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 80
         width: 16
         height: 16
@@ -2921,7 +2924,7 @@ TextureImporter:
       name: tileset-sliced_96
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 80
         width: 16
         height: 16
@@ -2942,7 +2945,7 @@ TextureImporter:
       name: tileset-sliced_97
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 80
         width: 16
         height: 16
@@ -2963,7 +2966,7 @@ TextureImporter:
       name: tileset-sliced_98
       rect:
         serializedVersion: 2
-        x: 240
+        x: 224
         y: 80
         width: 16
         height: 16
@@ -2984,8 +2987,8 @@ TextureImporter:
       name: tileset-sliced_99
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 240
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -3005,7 +3008,7 @@ TextureImporter:
       name: tileset-sliced_100
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 64
         width: 16
         height: 16
@@ -3026,7 +3029,7 @@ TextureImporter:
       name: tileset-sliced_101
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 64
         width: 16
         height: 16
@@ -3047,7 +3050,7 @@ TextureImporter:
       name: tileset-sliced_102
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 64
         width: 16
         height: 16
@@ -3068,7 +3071,7 @@ TextureImporter:
       name: tileset-sliced_103
       rect:
         serializedVersion: 2
-        x: 160
+        x: 80
         y: 64
         width: 16
         height: 16
@@ -3089,7 +3092,7 @@ TextureImporter:
       name: tileset-sliced_104
       rect:
         serializedVersion: 2
-        x: 176
+        x: 160
         y: 64
         width: 16
         height: 16
@@ -3110,7 +3113,7 @@ TextureImporter:
       name: tileset-sliced_105
       rect:
         serializedVersion: 2
-        x: 192
+        x: 176
         y: 64
         width: 16
         height: 16
@@ -3131,7 +3134,7 @@ TextureImporter:
       name: tileset-sliced_106
       rect:
         serializedVersion: 2
-        x: 224
+        x: 192
         y: 64
         width: 16
         height: 16
@@ -3152,7 +3155,7 @@ TextureImporter:
       name: tileset-sliced_107
       rect:
         serializedVersion: 2
-        x: 240
+        x: 224
         y: 64
         width: 16
         height: 16
@@ -3173,7 +3176,7 @@ TextureImporter:
       name: tileset-sliced_108
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 64
         width: 16
         height: 16
@@ -3194,7 +3197,7 @@ TextureImporter:
       name: tileset-sliced_109
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 64
         width: 16
         height: 16
@@ -3215,7 +3218,7 @@ TextureImporter:
       name: tileset-sliced_110
       rect:
         serializedVersion: 2
-        x: 336
+        x: 304
         y: 64
         width: 16
         height: 16
@@ -3236,8 +3239,8 @@ TextureImporter:
       name: tileset-sliced_111
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 336
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -3257,7 +3260,7 @@ TextureImporter:
       name: tileset-sliced_112
       rect:
         serializedVersion: 2
-        x: 48
+        x: 16
         y: 32
         width: 16
         height: 16
@@ -3278,7 +3281,7 @@ TextureImporter:
       name: tileset-sliced_113
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 32
         width: 16
         height: 16
@@ -3299,7 +3302,7 @@ TextureImporter:
       name: tileset-sliced_114
       rect:
         serializedVersion: 2
-        x: 144
+        x: 64
         y: 32
         width: 16
         height: 16
@@ -3320,7 +3323,7 @@ TextureImporter:
       name: tileset-sliced_115
       rect:
         serializedVersion: 2
-        x: 160
+        x: 144
         y: 32
         width: 16
         height: 16
@@ -3341,7 +3344,7 @@ TextureImporter:
       name: tileset-sliced_116
       rect:
         serializedVersion: 2
-        x: 176
+        x: 160
         y: 32
         width: 16
         height: 16
@@ -3362,7 +3365,7 @@ TextureImporter:
       name: tileset-sliced_117
       rect:
         serializedVersion: 2
-        x: 208
+        x: 176
         y: 32
         width: 16
         height: 16
@@ -3383,7 +3386,7 @@ TextureImporter:
       name: tileset-sliced_118
       rect:
         serializedVersion: 2
-        x: 224
+        x: 208
         y: 32
         width: 16
         height: 16
@@ -3404,7 +3407,7 @@ TextureImporter:
       name: tileset-sliced_119
       rect:
         serializedVersion: 2
-        x: 240
+        x: 224
         y: 32
         width: 16
         height: 16
@@ -3425,7 +3428,7 @@ TextureImporter:
       name: tileset-sliced_120
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 32
         width: 16
         height: 16
@@ -3446,8 +3449,8 @@ TextureImporter:
       name: tileset-sliced_121
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 272
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -3467,7 +3470,7 @@ TextureImporter:
       name: tileset-sliced_122
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 16
         width: 16
         height: 16
@@ -3488,7 +3491,7 @@ TextureImporter:
       name: tileset-sliced_123
       rect:
         serializedVersion: 2
-        x: 144
+        x: 64
         y: 16
         width: 16
         height: 16
@@ -3509,7 +3512,7 @@ TextureImporter:
       name: tileset-sliced_124
       rect:
         serializedVersion: 2
-        x: 160
+        x: 144
         y: 16
         width: 16
         height: 16
@@ -3530,7 +3533,7 @@ TextureImporter:
       name: tileset-sliced_125
       rect:
         serializedVersion: 2
-        x: 176
+        x: 160
         y: 16
         width: 16
         height: 16
@@ -3551,7 +3554,7 @@ TextureImporter:
       name: tileset-sliced_126
       rect:
         serializedVersion: 2
-        x: 208
+        x: 176
         y: 16
         width: 16
         height: 16
@@ -3572,7 +3575,7 @@ TextureImporter:
       name: tileset-sliced_127
       rect:
         serializedVersion: 2
-        x: 224
+        x: 208
         y: 16
         width: 16
         height: 16
@@ -3593,7 +3596,7 @@ TextureImporter:
       name: tileset-sliced_128
       rect:
         serializedVersion: 2
-        x: 240
+        x: 224
         y: 16
         width: 16
         height: 16
@@ -3606,6 +3609,27 @@ TextureImporter:
       bones: []
       spriteID: 263d940541df00760800000000000000
       internalID: 7422210449594766178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-sliced_129
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567d94dda3bec11c0800000000000000
+      internalID: -4531488486988327067
       vertices: []
       indices: 
       edges: []
