@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4302045454225755884}
   - component: {fileID: 1923772165875580466}
   - component: {fileID: 5370672873925067846}
+  - component: {fileID: 8274740468745231309}
   m_Layer: 9
   m_Name: jumpPad
   m_TagString: JumpPad
@@ -164,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e85c73e44d02d4e8b0debb0ea67eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _force: 900
 --- !u!61 &5370672873925067846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -190,6 +192,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23000215, y: 0.03656283}
   m_EdgeRadius: 0
+--- !u!95 &8274740468745231309
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032591289890869383}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66ae878826f31824bba307630ba54d63, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8182779260935585935
 GameObject:
   m_ObjectHideFlags: 0
