@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        LevelGen = GameObject.Find("TestLevelGenerator").GetComponent<LevelGenerator>();
+        LevelGen = LevelGen.GetComponent<LevelGenerator>();
         countdown_screen.SetActive(true);
         scoreScreen.SetActive(false);
     }
