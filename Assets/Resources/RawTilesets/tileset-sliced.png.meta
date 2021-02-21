@@ -776,6 +776,1341 @@ TextureImporter:
   - first:
       213: -4531488486988327067
     second: tileset-sliced_129
+  - first:
+      213: 3417122819050685005
+    second: tileset-sliced_130
+  - first:
+      213: 1064792509733464848
+    second: tileset-sliced_131
+  - first:
+      213: -7664523443258147847
+    second: tileset-sliced_132
+  - first:
+      213: 2584767416776782270
+    second: tileset-sliced_133
+  - first:
+      213: 3106468376584669649
+    second: tileset-sliced_134
+  - first:
+      213: 5590771776448743655
+    second: tileset-sliced_135
+  - first:
+      213: 6783044896508220329
+    second: tileset-sliced_136
+  - first:
+      213: -7061154500256012178
+    second: tileset-sliced_137
+  - first:
+      213: -5583800379931531812
+    second: tileset-sliced_138
+  - first:
+      213: -7640435081034542195
+    second: tileset-sliced_139
+  - first:
+      213: -5057354545063298637
+    second: tileset-sliced_140
+  - first:
+      213: -8501768730011826633
+    second: tileset-sliced_141
+  - first:
+      213: -6514135746822831516
+    second: tileset-sliced_142
+  - first:
+      213: -5505619799340016764
+    second: tileset-sliced_143
+  - first:
+      213: 5716170418857879520
+    second: tileset-sliced_144
+  - first:
+      213: -4814810404137453597
+    second: tileset-sliced_145
+  - first:
+      213: -2547791302770171137
+    second: tileset-sliced_146
+  - first:
+      213: -6378895973874470207
+    second: tileset-sliced_147
+  - first:
+      213: -8710686305375647247
+    second: tileset-sliced_148
+  - first:
+      213: 5677295579935694410
+    second: tileset-sliced_149
+  - first:
+      213: -4358981398086236390
+    second: tileset-sliced_150
+  - first:
+      213: -5029114709042505063
+    second: tileset-sliced_151
+  - first:
+      213: -3620374634525987564
+    second: tileset-sliced_152
+  - first:
+      213: 4721100566525188592
+    second: tileset-sliced_153
+  - first:
+      213: 2505280863251866834
+    second: tileset-sliced_154
+  - first:
+      213: 8451981687391928753
+    second: tileset-sliced_155
+  - first:
+      213: -9111039401271098628
+    second: tileset-sliced_156
+  - first:
+      213: 7337528754644119217
+    second: tileset-sliced_157
+  - first:
+      213: -6384883336984843916
+    second: tileset-sliced_158
+  - first:
+      213: -8265154039357955196
+    second: tileset-sliced_159
+  - first:
+      213: -3466688441380045636
+    second: tileset-sliced_160
+  - first:
+      213: 4198885681195569296
+    second: tileset-sliced_161
+  - first:
+      213: 187508840113995036
+    second: tileset-sliced_162
+  - first:
+      213: 840443084544727624
+    second: tileset-sliced_163
+  - first:
+      213: -3566115899800673305
+    second: tileset-sliced_164
+  - first:
+      213: 8135323623196867583
+    second: tileset-sliced_165
+  - first:
+      213: -755040385368491430
+    second: tileset-sliced_166
+  - first:
+      213: 5884070119728394008
+    second: tileset-sliced_167
+  - first:
+      213: -5538687566651150123
+    second: tileset-sliced_168
+  - first:
+      213: 6792602682260520159
+    second: tileset-sliced_169
+  - first:
+      213: -6937901588867460898
+    second: tileset-sliced_170
+  - first:
+      213: -6456280047497051414
+    second: tileset-sliced_171
+  - first:
+      213: -5724314345881379758
+    second: tileset-sliced_172
+  - first:
+      213: 7793028385810012603
+    second: tileset-sliced_173
+  - first:
+      213: -8831749700541457711
+    second: tileset-sliced_174
+  - first:
+      213: 5869301166687837109
+    second: tileset-sliced_175
+  - first:
+      213: -1790612913731931740
+    second: tileset-sliced_176
+  - first:
+      213: -8475668877218922616
+    second: tileset-sliced_177
+  - first:
+      213: -5672460171255902387
+    second: tileset-sliced_178
+  - first:
+      213: -1513571564722073977
+    second: tileset-sliced_179
+  - first:
+      213: -2289548456653628181
+    second: tileset-sliced_180
+  - first:
+      213: 1032582501561298535
+    second: tileset-sliced_181
+  - first:
+      213: 5268883677003979223
+    second: tileset-sliced_182
+  - first:
+      213: -1273054007636727348
+    second: tileset-sliced_183
+  - first:
+      213: 2099712616474474475
+    second: tileset-sliced_184
+  - first:
+      213: 559369396527706600
+    second: tileset-sliced_185
+  - first:
+      213: 7423259701677927591
+    second: tileset-sliced_186
+  - first:
+      213: 985796044042042249
+    second: tileset-sliced_187
+  - first:
+      213: -241406137861786412
+    second: tileset-sliced_188
+  - first:
+      213: -33957569777365749
+    second: tileset-sliced_189
+  - first:
+      213: -8963803872912591924
+    second: tileset-sliced_190
+  - first:
+      213: -6796973120446074212
+    second: tileset-sliced_191
+  - first:
+      213: -2372550769106334589
+    second: tileset-sliced_192
+  - first:
+      213: 3965001612684486156
+    second: tileset-sliced_193
+  - first:
+      213: -4980755753961281643
+    second: tileset-sliced_194
+  - first:
+      213: -1212655503792965485
+    second: tileset-sliced_195
+  - first:
+      213: 5722100656223697731
+    second: tileset-sliced_196
+  - first:
+      213: 6211215392840489745
+    second: tileset-sliced_197
+  - first:
+      213: 9171541218724863666
+    second: tileset-sliced_198
+  - first:
+      213: -4791054332202553108
+    second: tileset-sliced_199
+  - first:
+      213: -1668549839618802987
+    second: tileset-sliced_200
+  - first:
+      213: -3170362828711182113
+    second: tileset-sliced_201
+  - first:
+      213: 6582598235447843672
+    second: tileset-sliced_202
+  - first:
+      213: 1817942698848048419
+    second: tileset-sliced_203
+  - first:
+      213: 3622430699010495860
+    second: tileset-sliced_204
+  - first:
+      213: -6703512315398801619
+    second: tileset-sliced_205
+  - first:
+      213: -904991229933135468
+    second: tileset-sliced_206
+  - first:
+      213: -4480180416516072505
+    second: tileset-sliced_207
+  - first:
+      213: -7482128603661062911
+    second: tileset-sliced_208
+  - first:
+      213: -525933572098099584
+    second: tileset-sliced_209
+  - first:
+      213: -8333734656004243937
+    second: tileset-sliced_210
+  - first:
+      213: 5059661553693253794
+    second: tileset-sliced_211
+  - first:
+      213: -3029565328326456180
+    second: tileset-sliced_212
+  - first:
+      213: 8802438908252183112
+    second: tileset-sliced_213
+  - first:
+      213: -3042715811861242854
+    second: tileset-sliced_214
+  - first:
+      213: 8100437954038524988
+    second: tileset-sliced_215
+  - first:
+      213: -7142639482089227872
+    second: tileset-sliced_216
+  - first:
+      213: 1212095252572907775
+    second: tileset-sliced_217
+  - first:
+      213: -1831213332149453953
+    second: tileset-sliced_218
+  - first:
+      213: -4628193892502505994
+    second: tileset-sliced_219
+  - first:
+      213: -1373670626718164106
+    second: tileset-sliced_220
+  - first:
+      213: -279225659567884167
+    second: tileset-sliced_221
+  - first:
+      213: -4914719408387647979
+    second: tileset-sliced_222
+  - first:
+      213: 917248281876824603
+    second: tileset-sliced_223
+  - first:
+      213: -1932940403750856222
+    second: tileset-sliced_224
+  - first:
+      213: -7326234240070047007
+    second: tileset-sliced_225
+  - first:
+      213: -7955124526911109349
+    second: tileset-sliced_226
+  - first:
+      213: 2347385078426904262
+    second: tileset-sliced_227
+  - first:
+      213: 5303004837997340324
+    second: tileset-sliced_228
+  - first:
+      213: 5686708094451094638
+    second: tileset-sliced_229
+  - first:
+      213: -183225673536122633
+    second: tileset-sliced_230
+  - first:
+      213: -1901170777447675472
+    second: tileset-sliced_231
+  - first:
+      213: -1768470097878407345
+    second: tileset-sliced_232
+  - first:
+      213: 533753907483699254
+    second: tileset-sliced_233
+  - first:
+      213: -2195452512951921475
+    second: tileset-sliced_234
+  - first:
+      213: 728532181128539784
+    second: tileset-sliced_235
+  - first:
+      213: -4760404933569833491
+    second: tileset-sliced_236
+  - first:
+      213: 3991402007088788607
+    second: tileset-sliced_237
+  - first:
+      213: -1281046290234229384
+    second: tileset-sliced_238
+  - first:
+      213: 7046256218671901494
+    second: tileset-sliced_239
+  - first:
+      213: 462898042631746068
+    second: tileset-sliced_240
+  - first:
+      213: 1299993998399941965
+    second: tileset-sliced_241
+  - first:
+      213: -5361462495014320651
+    second: tileset-sliced_242
+  - first:
+      213: 8804856203262900840
+    second: tileset-sliced_243
+  - first:
+      213: -7369992973748995708
+    second: tileset-sliced_244
+  - first:
+      213: 7589317958829867146
+    second: tileset-sliced_245
+  - first:
+      213: 447663682520851302
+    second: tileset-sliced_246
+  - first:
+      213: -9065851387603626992
+    second: tileset-sliced_247
+  - first:
+      213: 6961505634653243860
+    second: tileset-sliced_248
+  - first:
+      213: 2386104840845399911
+    second: tileset-sliced_249
+  - first:
+      213: 6600592379502042325
+    second: tileset-sliced_250
+  - first:
+      213: 161839537987367795
+    second: tileset-sliced_251
+  - first:
+      213: 3423280355034035543
+    second: tileset-sliced_252
+  - first:
+      213: 4264844802340435093
+    second: tileset-sliced_253
+  - first:
+      213: 3654017631495110789
+    second: tileset-sliced_254
+  - first:
+      213: -6356306425709453529
+    second: tileset-sliced_255
+  - first:
+      213: 8735925653128238749
+    second: tileset-sliced_256
+  - first:
+      213: -3779188597714068040
+    second: tileset-sliced_257
+  - first:
+      213: -1135066886139003719
+    second: tileset-sliced_258
+  - first:
+      213: 8143614783391564133
+    second: tileset-sliced_259
+  - first:
+      213: 158337454902153845
+    second: tileset-sliced_260
+  - first:
+      213: -8796893769348613694
+    second: tileset-sliced_261
+  - first:
+      213: 5409090169394190042
+    second: tileset-sliced_262
+  - first:
+      213: 8631672208515664161
+    second: tileset-sliced_263
+  - first:
+      213: 4088436523202416215
+    second: tileset-sliced_264
+  - first:
+      213: -178711963120449670
+    second: tileset-sliced_265
+  - first:
+      213: -1000102741736862877
+    second: tileset-sliced_266
+  - first:
+      213: -9165577334324435535
+    second: tileset-sliced_267
+  - first:
+      213: -4980750646437951600
+    second: tileset-sliced_268
+  - first:
+      213: 2844463257811469750
+    second: tileset-sliced_269
+  - first:
+      213: 8334801540989807215
+    second: tileset-sliced_270
+  - first:
+      213: -8417029743964983518
+    second: tileset-sliced_271
+  - first:
+      213: -1076626827546670567
+    second: tileset-sliced_272
+  - first:
+      213: 5990624772560536960
+    second: tileset-sliced_273
+  - first:
+      213: -5028226630951169890
+    second: tileset-sliced_274
+  - first:
+      213: -3757258309931966232
+    second: tileset-sliced_275
+  - first:
+      213: -4329616231087616379
+    second: tileset-sliced_276
+  - first:
+      213: 6316356575041430386
+    second: tileset-sliced_277
+  - first:
+      213: -7465593594975802249
+    second: tileset-sliced_278
+  - first:
+      213: 4663827079410887170
+    second: tileset-sliced_279
+  - first:
+      213: 3494058239966171486
+    second: tileset-sliced_280
+  - first:
+      213: -155648162100664549
+    second: tileset-sliced_281
+  - first:
+      213: 3566260774002261063
+    second: tileset-sliced_282
+  - first:
+      213: 5565909649964079529
+    second: tileset-sliced_283
+  - first:
+      213: 3455269626426147772
+    second: tileset-sliced_284
+  - first:
+      213: 4165025756441834095
+    second: tileset-sliced_285
+  - first:
+      213: -4118476224851859229
+    second: tileset-sliced_286
+  - first:
+      213: -3452750410254035407
+    second: tileset-sliced_287
+  - first:
+      213: -3139263414408452977
+    second: tileset-sliced_288
+  - first:
+      213: 8058748541431641219
+    second: tileset-sliced_289
+  - first:
+      213: 6768685788324779271
+    second: tileset-sliced_290
+  - first:
+      213: 5629482844317709976
+    second: tileset-sliced_291
+  - first:
+      213: 4540155124540256935
+    second: tileset-sliced_292
+  - first:
+      213: -7729638053359242949
+    second: tileset-sliced_293
+  - first:
+      213: 7214103370208140833
+    second: tileset-sliced_294
+  - first:
+      213: 6561928902601085085
+    second: tileset-sliced_295
+  - first:
+      213: 8176701309150748086
+    second: tileset-sliced_296
+  - first:
+      213: 7188266628953829494
+    second: tileset-sliced_297
+  - first:
+      213: -5606165136208100749
+    second: tileset-sliced_298
+  - first:
+      213: -744531894292145591
+    second: tileset-sliced_299
+  - first:
+      213: 4377226883009118041
+    second: tileset-sliced_300
+  - first:
+      213: -541682729530389663
+    second: tileset-sliced_301
+  - first:
+      213: 5699124338875842035
+    second: tileset-sliced_302
+  - first:
+      213: 4739067351807278052
+    second: tileset-sliced_303
+  - first:
+      213: 8256869936918971932
+    second: tileset-sliced_304
+  - first:
+      213: 8013142985752461725
+    second: tileset-sliced_305
+  - first:
+      213: 8134587472354613378
+    second: tileset-sliced_306
+  - first:
+      213: -2175216124057107055
+    second: tileset-sliced_307
+  - first:
+      213: 2974505906995583723
+    second: tileset-sliced_308
+  - first:
+      213: 4771309355643511280
+    second: tileset-sliced_309
+  - first:
+      213: 1407938225192639110
+    second: tileset-sliced_310
+  - first:
+      213: 1259671782031662888
+    second: tileset-sliced_311
+  - first:
+      213: 5147340620479050925
+    second: tileset-sliced_312
+  - first:
+      213: 1256566710450838793
+    second: tileset-sliced_313
+  - first:
+      213: -5431503280622984430
+    second: tileset-sliced_314
+  - first:
+      213: 5715989562279751302
+    second: tileset-sliced_315
+  - first:
+      213: -6863642347136374844
+    second: tileset-sliced_316
+  - first:
+      213: -7585160124762705244
+    second: tileset-sliced_317
+  - first:
+      213: -3393902592000237541
+    second: tileset-sliced_318
+  - first:
+      213: -253834189311562856
+    second: tileset-sliced_319
+  - first:
+      213: 525284544604082466
+    second: tileset-sliced_320
+  - first:
+      213: -9030403667988861831
+    second: tileset-sliced_321
+  - first:
+      213: 6251573496869825488
+    second: tileset-sliced_322
+  - first:
+      213: 4875744870051552553
+    second: tileset-sliced_323
+  - first:
+      213: 1176827371175472952
+    second: tileset-sliced_324
+  - first:
+      213: 8141093278154157382
+    second: tileset-sliced_325
+  - first:
+      213: -3538311068133560708
+    second: tileset-sliced_326
+  - first:
+      213: 3643505383495189202
+    second: tileset-sliced_327
+  - first:
+      213: 8452474848831658947
+    second: tileset-sliced_328
+  - first:
+      213: 1743892060329476920
+    second: tileset-sliced_329
+  - first:
+      213: 2632038444733480124
+    second: tileset-sliced_330
+  - first:
+      213: 947259793960843829
+    second: tileset-sliced_331
+  - first:
+      213: -813478660811557654
+    second: tileset-sliced_332
+  - first:
+      213: 6604016210600465870
+    second: tileset-sliced_333
+  - first:
+      213: 8689819326882926756
+    second: tileset-sliced_334
+  - first:
+      213: 3710348651278092265
+    second: tileset-sliced_335
+  - first:
+      213: -4796585144539899146
+    second: tileset-sliced_336
+  - first:
+      213: 6395444021788854323
+    second: tileset-sliced_337
+  - first:
+      213: -8214831511056674863
+    second: tileset-sliced_338
+  - first:
+      213: -3076172450054801823
+    second: tileset-sliced_339
+  - first:
+      213: 7826508789560672266
+    second: tileset-sliced_340
+  - first:
+      213: -9130317790558640858
+    second: tileset-sliced_341
+  - first:
+      213: 7703506262087694747
+    second: tileset-sliced_342
+  - first:
+      213: -1630574123896602723
+    second: tileset-sliced_343
+  - first:
+      213: 4858558447400031442
+    second: tileset-sliced_344
+  - first:
+      213: -3275932795863532949
+    second: tileset-sliced_345
+  - first:
+      213: -2081559193569390248
+    second: tileset-sliced_346
+  - first:
+      213: -8213333240557191528
+    second: tileset-sliced_347
+  - first:
+      213: -2742317814756997744
+    second: tileset-sliced_348
+  - first:
+      213: -4770678725270591676
+    second: tileset-sliced_349
+  - first:
+      213: 2037408501164716173
+    second: tileset-sliced_350
+  - first:
+      213: -5411369019235048070
+    second: tileset-sliced_351
+  - first:
+      213: 6372525447696273080
+    second: tileset-sliced_352
+  - first:
+      213: -6055099449796494924
+    second: tileset-sliced_353
+  - first:
+      213: 7848649144828741283
+    second: tileset-sliced_354
+  - first:
+      213: 4897460234775725408
+    second: tileset-sliced_355
+  - first:
+      213: 8416556442829148226
+    second: tileset-sliced_356
+  - first:
+      213: -3322292435945092974
+    second: tileset-sliced_357
+  - first:
+      213: -4457533208927172608
+    second: tileset-sliced_358
+  - first:
+      213: -8935122043076053203
+    second: tileset-sliced_359
+  - first:
+      213: 3036400135466333111
+    second: tileset-sliced_360
+  - first:
+      213: 5436961875884922882
+    second: tileset-sliced_361
+  - first:
+      213: 2958011134216776696
+    second: tileset-sliced_362
+  - first:
+      213: 3468778118513350034
+    second: tileset-sliced_363
+  - first:
+      213: 2694089313477405397
+    second: tileset-sliced_364
+  - first:
+      213: -3731066438570994849
+    second: tileset-sliced_365
+  - first:
+      213: 2442882720697662632
+    second: tileset-sliced_366
+  - first:
+      213: -7027504486989911997
+    second: tileset-sliced_367
+  - first:
+      213: 3201487230788058457
+    second: tileset-sliced_368
+  - first:
+      213: 786472016523666420
+    second: tileset-sliced_369
+  - first:
+      213: -5797630749685352414
+    second: tileset-sliced_370
+  - first:
+      213: -452424833191680400
+    second: tileset-sliced_371
+  - first:
+      213: 1590754386852813454
+    second: tileset-sliced_372
+  - first:
+      213: -6291747920817652293
+    second: tileset-sliced_373
+  - first:
+      213: 2844342146545060651
+    second: tileset-sliced_374
+  - first:
+      213: 6956963950043106395
+    second: tileset-sliced_375
+  - first:
+      213: -1050365522450183705
+    second: tileset-sliced_376
+  - first:
+      213: 2112648043320774305
+    second: tileset-sliced_377
+  - first:
+      213: 8690014150911844229
+    second: tileset-sliced_378
+  - first:
+      213: 2689782618581264879
+    second: tileset-sliced_379
+  - first:
+      213: -7799005950425751061
+    second: tileset-sliced_380
+  - first:
+      213: -302885347417511773
+    second: tileset-sliced_381
+  - first:
+      213: -9152649126932277610
+    second: tileset-sliced_382
+  - first:
+      213: -3077219524261779172
+    second: tileset-sliced_383
+  - first:
+      213: 2647453703012622009
+    second: tileset-sliced_384
+  - first:
+      213: -146023389425640562
+    second: tileset-sliced_385
+  - first:
+      213: -7947947893375560194
+    second: tileset-sliced_386
+  - first:
+      213: 2679318260112039543
+    second: tileset-sliced_387
+  - first:
+      213: -5456357190963068475
+    second: tileset-sliced_388
+  - first:
+      213: -9193947222644437029
+    second: tileset-sliced_389
+  - first:
+      213: -1393977502438576787
+    second: tileset-sliced_390
+  - first:
+      213: -1151656802845111035
+    second: tileset-sliced_391
+  - first:
+      213: 9046756045066138473
+    second: tileset-sliced_392
+  - first:
+      213: 1514113333756650476
+    second: tileset-sliced_393
+  - first:
+      213: -4433295783777245146
+    second: tileset-sliced_394
+  - first:
+      213: -6747963172786747506
+    second: tileset-sliced_395
+  - first:
+      213: -3017501373786428958
+    second: tileset-sliced_396
+  - first:
+      213: -4891936291904238448
+    second: tileset-sliced_397
+  - first:
+      213: -7369763850613598372
+    second: tileset-sliced_398
+  - first:
+      213: -4706193831621666151
+    second: tileset-sliced_399
+  - first:
+      213: 3545313328996903238
+    second: tileset-sliced_400
+  - first:
+      213: 1605163352586441621
+    second: tileset-sliced_401
+  - first:
+      213: -248108894099167291
+    second: tileset-sliced_402
+  - first:
+      213: 8865910237490071730
+    second: tileset-sliced_403
+  - first:
+      213: 8167830753142495061
+    second: tileset-sliced_404
+  - first:
+      213: -4236465831610998281
+    second: tileset-sliced_405
+  - first:
+      213: -1489673091104681911
+    second: tileset-sliced_406
+  - first:
+      213: 2452783427309723807
+    second: tileset-sliced_407
+  - first:
+      213: 5918283653330814954
+    second: tileset-sliced_408
+  - first:
+      213: 1779864105029954275
+    second: tileset-sliced_409
+  - first:
+      213: 8186314995223257837
+    second: tileset-sliced_410
+  - first:
+      213: 4609938639148934979
+    second: tileset-sliced_411
+  - first:
+      213: -5309261590288410495
+    second: tileset-sliced_412
+  - first:
+      213: 4153438804586947585
+    second: tileset-sliced_413
+  - first:
+      213: 4166729429104212090
+    second: tileset-sliced_414
+  - first:
+      213: 4042471056405056523
+    second: tileset-sliced_415
+  - first:
+      213: 6809779363407010639
+    second: tileset-sliced_416
+  - first:
+      213: 6290720266498416179
+    second: tileset-sliced_417
+  - first:
+      213: -9162113618557001080
+    second: tileset-sliced_418
+  - first:
+      213: -3635803945454524721
+    second: tileset-sliced_419
+  - first:
+      213: -4365790768770531619
+    second: tileset-sliced_420
+  - first:
+      213: -1237891329906045908
+    second: tileset-sliced_421
+  - first:
+      213: 2991756628949711497
+    second: tileset-sliced_422
+  - first:
+      213: -3905936384150530052
+    second: tileset-sliced_423
+  - first:
+      213: -2696008857212671309
+    second: tileset-sliced_424
+  - first:
+      213: -6015851397620130726
+    second: tileset-sliced_425
+  - first:
+      213: 282157016145287482
+    second: tileset-sliced_426
+  - first:
+      213: -4733849288268778842
+    second: tileset-sliced_427
+  - first:
+      213: 572789169102642416
+    second: tileset-sliced_428
+  - first:
+      213: -2664141949975148073
+    second: tileset-sliced_429
+  - first:
+      213: 8212927617846988090
+    second: tileset-sliced_430
+  - first:
+      213: -6223349321663914913
+    second: tileset-sliced_431
+  - first:
+      213: -8403146433900081918
+    second: tileset-sliced_432
+  - first:
+      213: 8492468731560027486
+    second: tileset-sliced_433
+  - first:
+      213: -8888707690082378756
+    second: tileset-sliced_434
+  - first:
+      213: -7544336851815600877
+    second: tileset-sliced_435
+  - first:
+      213: 1648117773941622205
+    second: tileset-sliced_436
+  - first:
+      213: -1968101201744550063
+    second: tileset-sliced_437
+  - first:
+      213: -5364299703127154963
+    second: tileset-sliced_438
+  - first:
+      213: -6806248236639145189
+    second: tileset-sliced_439
+  - first:
+      213: 4498634848555589869
+    second: tileset-sliced_440
+  - first:
+      213: 929300163786718641
+    second: tileset-sliced_441
+  - first:
+      213: 8145206529019285377
+    second: tileset-sliced_442
+  - first:
+      213: 3917371517672460513
+    second: tileset-sliced_443
+  - first:
+      213: 945382452641296410
+    second: tileset-sliced_444
+  - first:
+      213: 5033115409229127274
+    second: tileset-sliced_445
+  - first:
+      213: 6476232464982102029
+    second: tileset-sliced_446
+  - first:
+      213: -3814165635194360275
+    second: tileset-sliced_447
+  - first:
+      213: -4240440324456237351
+    second: tileset-sliced_448
+  - first:
+      213: -3137541096897219138
+    second: tileset-sliced_449
+  - first:
+      213: 8477328599697496259
+    second: tileset-sliced_450
+  - first:
+      213: -8188305798147785849
+    second: tileset-sliced_451
+  - first:
+      213: 4487396437911701345
+    second: tileset-sliced_452
+  - first:
+      213: -1224828697704121307
+    second: tileset-sliced_453
+  - first:
+      213: -2437221516494480630
+    second: tileset-sliced_454
+  - first:
+      213: -1736339358507923537
+    second: tileset-sliced_455
+  - first:
+      213: 4772570879661333350
+    second: tileset-sliced_456
+  - first:
+      213: 6141231383840857791
+    second: tileset-sliced_457
+  - first:
+      213: -1346272660794291988
+    second: tileset-sliced_458
+  - first:
+      213: 6811524292047771652
+    second: tileset-sliced_459
+  - first:
+      213: 2781836466823433882
+    second: tileset-sliced_460
+  - first:
+      213: 5830269428504819355
+    second: tileset-sliced_461
+  - first:
+      213: -2478722645426834257
+    second: tileset-sliced_462
+  - first:
+      213: 5985402981338590413
+    second: tileset-sliced_463
+  - first:
+      213: -2118106870556197822
+    second: tileset-sliced_464
+  - first:
+      213: 7662289423761948790
+    second: tileset-sliced_465
+  - first:
+      213: 4649749145528909651
+    second: tileset-sliced_466
+  - first:
+      213: -7677285941206772533
+    second: tileset-sliced_467
+  - first:
+      213: 3428059531877107867
+    second: tileset-sliced_468
+  - first:
+      213: -6279862694726722160
+    second: tileset-sliced_469
+  - first:
+      213: -7042495360758803981
+    second: tileset-sliced_470
+  - first:
+      213: 8434223154151913040
+    second: tileset-sliced_471
+  - first:
+      213: 2414480599120454628
+    second: tileset-sliced_472
+  - first:
+      213: -1695061162412967493
+    second: tileset-sliced_473
+  - first:
+      213: 7804410161018023713
+    second: tileset-sliced_474
+  - first:
+      213: 6714611155518983520
+    second: tileset-sliced_475
+  - first:
+      213: 8507332392570651251
+    second: tileset-sliced_476
+  - first:
+      213: 832534039962647637
+    second: tileset-sliced_477
+  - first:
+      213: -8836739207161792583
+    second: tileset-sliced_478
+  - first:
+      213: -8856772585116130624
+    second: tileset-sliced_479
+  - first:
+      213: -4980798251379518478
+    second: tileset-sliced_480
+  - first:
+      213: -4047365358174145595
+    second: tileset-sliced_481
+  - first:
+      213: -62059844022314684
+    second: tileset-sliced_482
+  - first:
+      213: 8146229920445867798
+    second: tileset-sliced_483
+  - first:
+      213: 2016782336401107596
+    second: tileset-sliced_484
+  - first:
+      213: -4161689546356190726
+    second: tileset-sliced_485
+  - first:
+      213: -4429256528366331697
+    second: tileset-sliced_486
+  - first:
+      213: 7617547397210566354
+    second: tileset-sliced_487
+  - first:
+      213: 8249573618435145394
+    second: tileset-sliced_488
+  - first:
+      213: 1211664760409372005
+    second: tileset-sliced_489
+  - first:
+      213: 1899844022924508830
+    second: tileset-sliced_490
+  - first:
+      213: -3969413844298972408
+    second: tileset-sliced_491
+  - first:
+      213: -6001232901320361464
+    second: tileset-sliced_492
+  - first:
+      213: -5782256969898807260
+    second: tileset-sliced_493
+  - first:
+      213: 5976953548172274772
+    second: tileset-sliced_494
+  - first:
+      213: 3720858967184358004
+    second: tileset-sliced_495
+  - first:
+      213: 3565674691877794585
+    second: tileset-sliced_496
+  - first:
+      213: 7400164466006557452
+    second: tileset-sliced_497
+  - first:
+      213: -2879495538134562966
+    second: tileset-sliced_498
+  - first:
+      213: 6344508556856531944
+    second: tileset-sliced_499
+  - first:
+      213: -358286304425287021
+    second: tileset-sliced_500
+  - first:
+      213: 6301043222737018695
+    second: tileset-sliced_501
+  - first:
+      213: 9086255298229279363
+    second: tileset-sliced_502
+  - first:
+      213: 2456711790872885624
+    second: tileset-sliced_503
+  - first:
+      213: -2571999581512062524
+    second: tileset-sliced_504
+  - first:
+      213: -5639717373915345800
+    second: tileset-sliced_505
+  - first:
+      213: -4996588212611509511
+    second: tileset-sliced_506
+  - first:
+      213: -1786475563043247191
+    second: tileset-sliced_507
+  - first:
+      213: 4541106768110370844
+    second: tileset-sliced_508
+  - first:
+      213: -1999931802264459106
+    second: tileset-sliced_509
+  - first:
+      213: 925011745987093306
+    second: tileset-sliced_510
+  - first:
+      213: 8340332309396200478
+    second: tileset-sliced_511
+  - first:
+      213: 356480491768752082
+    second: tileset-sliced_512
+  - first:
+      213: -3660172562538690096
+    second: tileset-sliced_513
+  - first:
+      213: -5178914082172787411
+    second: tileset-sliced_514
+  - first:
+      213: -1083728293306320924
+    second: tileset-sliced_515
+  - first:
+      213: 7743614663644290645
+    second: tileset-sliced_516
+  - first:
+      213: -8227193007375726242
+    second: tileset-sliced_517
+  - first:
+      213: -1007237576292660538
+    second: tileset-sliced_518
+  - first:
+      213: 2406767552655457014
+    second: tileset-sliced_519
+  - first:
+      213: 4526719783123655747
+    second: tileset-sliced_520
+  - first:
+      213: 2470956603039526293
+    second: tileset-sliced_521
+  - first:
+      213: 5866344953854052515
+    second: tileset-sliced_522
+  - first:
+      213: 5069146831289255656
+    second: tileset-sliced_523
+  - first:
+      213: 2014931029700249587
+    second: tileset-sliced_524
+  - first:
+      213: -5476671490974239021
+    second: tileset-sliced_525
+  - first:
+      213: 53947490007411816
+    second: tileset-sliced_526
+  - first:
+      213: 2773508125029697532
+    second: tileset-sliced_527
+  - first:
+      213: 6511614365752401214
+    second: tileset-sliced_528
+  - first:
+      213: -4513058907222729563
+    second: tileset-sliced_529
+  - first:
+      213: 6202408105367448412
+    second: tileset-sliced_530
+  - first:
+      213: -2983420939189637772
+    second: tileset-sliced_531
+  - first:
+      213: -8157661601435210253
+    second: tileset-sliced_532
+  - first:
+      213: -3318915888919805260
+    second: tileset-sliced_533
+  - first:
+      213: -3251120005127194964
+    second: tileset-sliced_534
+  - first:
+      213: 5408778516790857136
+    second: tileset-sliced_535
+  - first:
+      213: -339741550672966362
+    second: tileset-sliced_536
+  - first:
+      213: 4369551398227856479
+    second: tileset-sliced_537
+  - first:
+      213: -1444166352352762971
+    second: tileset-sliced_538
+  - first:
+      213: -2038506094269137773
+    second: tileset-sliced_539
+  - first:
+      213: 168014016276423535
+    second: tileset-sliced_540
+  - first:
+      213: -5851596775671118628
+    second: tileset-sliced_541
+  - first:
+      213: 7323164712963996051
+    second: tileset-sliced_542
+  - first:
+      213: 8936259504874576022
+    second: tileset-sliced_543
+  - first:
+      213: 4788104603857364818
+    second: tileset-sliced_544
+  - first:
+      213: 4779867946122073263
+    second: tileset-sliced_545
+  - first:
+      213: -4813205421623082819
+    second: tileset-sliced_546
+  - first:
+      213: -5133835465390454690
+    second: tileset-sliced_547
+  - first:
+      213: -6046305140496435971
+    second: tileset-sliced_548
+  - first:
+      213: -8029271412169704186
+    second: tileset-sliced_549
+  - first:
+      213: -7345655893709468601
+    second: tileset-sliced_550
+  - first:
+      213: -6489616099899777057
+    second: tileset-sliced_551
+  - first:
+      213: -6547440596587143199
+    second: tileset-sliced_552
+  - first:
+      213: 306453681833455952
+    second: tileset-sliced_553
+  - first:
+      213: -1154301879418513381
+    second: tileset-sliced_554
+  - first:
+      213: 4105289359228118654
+    second: tileset-sliced_555
+  - first:
+      213: 8243793360286174363
+    second: tileset-sliced_556
+  - first:
+      213: 6057282507724084755
+    second: tileset-sliced_557
+  - first:
+      213: -5815527262973600360
+    second: tileset-sliced_558
+  - first:
+      213: -5215468167103040136
+    second: tileset-sliced_559
+  - first:
+      213: 4586238053727409677
+    second: tileset-sliced_560
+  - first:
+      213: 1965838727371106228
+    second: tileset-sliced_561
+  - first:
+      213: 199246857921253164
+    second: tileset-sliced_562
+  - first:
+      213: -2755196713994384109
+    second: tileset-sliced_563
+  - first:
+      213: -2325593184103099167
+    second: tileset-sliced_564
+  - first:
+      213: 2028596193200679231
+    second: tileset-sliced_565
+  - first:
+      213: 3918572359274711503
+    second: tileset-sliced_566
+  - first:
+      213: 5277439793237295546
+    second: tileset-sliced_567
+  - first:
+      213: 1670792074691993051
+    second: tileset-sliced_568
+  - first:
+      213: -9003455173906421938
+    second: tileset-sliced_569
+  - first:
+      213: 5903076435486984412
+    second: tileset-sliced_570
+  - first:
+      213: 4241169102042585729
+    second: tileset-sliced_571
+  - first:
+      213: 5646979605016382863
+    second: tileset-sliced_572
+  - first:
+      213: 5629715594485910151
+    second: tileset-sliced_573
+  - first:
+      213: -6944461552346672808
+    second: tileset-sliced_574
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -905,7 +2240,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -8, y: 8}
@@ -934,7 +2269,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -955,7 +2290,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -976,7 +2311,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,7 +2332,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,7 +2353,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1039,7 +2374,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1060,7 +2395,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1081,7 +2416,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1102,7 +2437,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1123,7 +2458,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1144,7 +2479,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1165,7 +2500,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1186,7 +2521,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1207,7 +2542,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1228,7 +2563,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1249,7 +2584,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1270,7 +2605,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1291,7 +2626,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1312,7 +2647,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1333,7 +2668,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1354,7 +2689,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1375,7 +2710,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1396,7 +2731,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1417,7 +2752,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1438,7 +2773,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1459,7 +2794,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1480,7 +2815,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1501,7 +2836,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1522,7 +2857,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1543,7 +2878,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1564,7 +2899,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1585,7 +2920,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1606,7 +2941,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1627,7 +2962,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1648,7 +2983,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1669,7 +3004,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1690,7 +3025,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1711,7 +3046,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1732,7 +3067,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1753,7 +3088,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1782,10 +3117,17 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -6, y: 0}
+        - {x: -6, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 0}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: e7816205afd98e130800000000000000
@@ -1803,7 +3145,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1824,7 +3166,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1845,7 +3187,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1866,7 +3208,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1882,12 +3224,12 @@ TextureImporter:
       name: tileset-sliced_46
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
+        x: 176
+        y: 256
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1903,12 +3245,12 @@ TextureImporter:
       name: tileset-sliced_47
       rect:
         serializedVersion: 2
-        x: 48
-        y: 240
+        x: 192
+        y: 256
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1924,12 +3266,12 @@ TextureImporter:
       name: tileset-sliced_48
       rect:
         serializedVersion: 2
-        x: 80
+        x: 16
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1945,12 +3287,12 @@ TextureImporter:
       name: tileset-sliced_49
       rect:
         serializedVersion: 2
-        x: 112
+        x: 48
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1966,12 +3308,12 @@ TextureImporter:
       name: tileset-sliced_50
       rect:
         serializedVersion: 2
-        x: 144
+        x: 80
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1987,12 +3329,12 @@ TextureImporter:
       name: tileset-sliced_51
       rect:
         serializedVersion: 2
-        x: 176
+        x: 112
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2008,12 +3350,12 @@ TextureImporter:
       name: tileset-sliced_52
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2029,12 +3371,12 @@ TextureImporter:
       name: tileset-sliced_53
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2050,12 +3392,12 @@ TextureImporter:
       name: tileset-sliced_54
       rect:
         serializedVersion: 2
-        x: 304
+        x: 240
         y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2071,12 +3413,12 @@ TextureImporter:
       name: tileset-sliced_55
       rect:
         serializedVersion: 2
-        x: 240
-        y: 208
+        x: 272
+        y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2092,12 +3434,12 @@ TextureImporter:
       name: tileset-sliced_56
       rect:
         serializedVersion: 2
-        x: 272
-        y: 208
+        x: 304
+        y: 240
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2113,12 +3455,12 @@ TextureImporter:
       name: tileset-sliced_57
       rect:
         serializedVersion: 2
-        x: 304
+        x: 240
         y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2134,12 +3476,12 @@ TextureImporter:
       name: tileset-sliced_58
       rect:
         serializedVersion: 2
-        x: 16
-        y: 192
+        x: 272
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2155,12 +3497,12 @@ TextureImporter:
       name: tileset-sliced_59
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 304
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2176,12 +3518,12 @@ TextureImporter:
       name: tileset-sliced_60
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2197,12 +3539,12 @@ TextureImporter:
       name: tileset-sliced_61
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2218,12 +3560,12 @@ TextureImporter:
       name: tileset-sliced_62
       rect:
         serializedVersion: 2
-        x: 112
+        x: 64
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2239,12 +3581,12 @@ TextureImporter:
       name: tileset-sliced_63
       rect:
         serializedVersion: 2
-        x: 160
+        x: 80
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2260,12 +3602,12 @@ TextureImporter:
       name: tileset-sliced_64
       rect:
         serializedVersion: 2
-        x: 176
+        x: 112
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2281,12 +3623,12 @@ TextureImporter:
       name: tileset-sliced_65
       rect:
         serializedVersion: 2
-        x: 32
-        y: 176
+        x: 160
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2302,12 +3644,12 @@ TextureImporter:
       name: tileset-sliced_66
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
+        x: 176
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2323,12 +3665,12 @@ TextureImporter:
       name: tileset-sliced_67
       rect:
         serializedVersion: 2
-        x: 240
+        x: 32
         y: 176
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2344,12 +3686,12 @@ TextureImporter:
       name: tileset-sliced_68
       rect:
         serializedVersion: 2
-        x: 272
+        x: 64
         y: 176
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2365,12 +3707,12 @@ TextureImporter:
       name: tileset-sliced_69
       rect:
         serializedVersion: 2
-        x: 304
+        x: 240
         y: 176
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2386,12 +3728,12 @@ TextureImporter:
       name: tileset-sliced_70
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 272
+        y: 176
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2407,12 +3749,12 @@ TextureImporter:
       name: tileset-sliced_71
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 304
+        y: 176
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2428,12 +3770,12 @@ TextureImporter:
       name: tileset-sliced_72
       rect:
         serializedVersion: 2
-        x: 176
+        x: 112
         y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2449,12 +3791,12 @@ TextureImporter:
       name: tileset-sliced_73
       rect:
         serializedVersion: 2
-        x: 208
+        x: 144
         y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2470,12 +3812,12 @@ TextureImporter:
       name: tileset-sliced_74
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
+        x: 176
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2491,12 +3833,12 @@ TextureImporter:
       name: tileset-sliced_75
       rect:
         serializedVersion: 2
-        x: 144
-        y: 128
+        x: 208
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2512,12 +3854,12 @@ TextureImporter:
       name: tileset-sliced_76
       rect:
         serializedVersion: 2
-        x: 176
+        x: 112
         y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2533,12 +3875,12 @@ TextureImporter:
       name: tileset-sliced_77
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2554,12 +3896,12 @@ TextureImporter:
       name: tileset-sliced_78
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2575,12 +3917,12 @@ TextureImporter:
       name: tileset-sliced_79
       rect:
         serializedVersion: 2
-        x: 304
+        x: 240
         y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2596,12 +3938,12 @@ TextureImporter:
       name: tileset-sliced_80
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 272
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2617,12 +3959,12 @@ TextureImporter:
       name: tileset-sliced_81
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 304
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2638,12 +3980,12 @@ TextureImporter:
       name: tileset-sliced_82
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2659,12 +4001,12 @@ TextureImporter:
       name: tileset-sliced_83
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2680,12 +4022,12 @@ TextureImporter:
       name: tileset-sliced_84
       rect:
         serializedVersion: 2
-        x: 144
+        x: 64
         y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2701,12 +4043,12 @@ TextureImporter:
       name: tileset-sliced_85
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 80
+        y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2722,12 +4064,12 @@ TextureImporter:
       name: tileset-sliced_86
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 144
+        y: 112
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2743,12 +4085,12 @@ TextureImporter:
       name: tileset-sliced_87
       rect:
         serializedVersion: 2
-        x: 176
+        x: 32
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2764,12 +4106,12 @@ TextureImporter:
       name: tileset-sliced_88
       rect:
         serializedVersion: 2
-        x: 224
+        x: 64
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2785,12 +4127,12 @@ TextureImporter:
       name: tileset-sliced_89
       rect:
         serializedVersion: 2
-        x: 240
+        x: 176
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2806,12 +4148,12 @@ TextureImporter:
       name: tileset-sliced_90
       rect:
         serializedVersion: 2
-        x: 272
+        x: 224
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2827,12 +4169,12 @@ TextureImporter:
       name: tileset-sliced_91
       rect:
         serializedVersion: 2
-        x: 288
+        x: 240
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2848,12 +4190,12 @@ TextureImporter:
       name: tileset-sliced_92
       rect:
         serializedVersion: 2
-        x: 304
+        x: 272
         y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2869,12 +4211,12 @@ TextureImporter:
       name: tileset-sliced_93
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 288
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2890,12 +4232,12 @@ TextureImporter:
       name: tileset-sliced_94
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 304
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2911,12 +4253,12 @@ TextureImporter:
       name: tileset-sliced_95
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2932,12 +4274,12 @@ TextureImporter:
       name: tileset-sliced_96
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2953,12 +4295,12 @@ TextureImporter:
       name: tileset-sliced_97
       rect:
         serializedVersion: 2
-        x: 176
+        x: 64
         y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2974,12 +4316,12 @@ TextureImporter:
       name: tileset-sliced_98
       rect:
         serializedVersion: 2
-        x: 224
+        x: 80
         y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2995,12 +4337,12 @@ TextureImporter:
       name: tileset-sliced_99
       rect:
         serializedVersion: 2
-        x: 240
+        x: 176
         y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3016,12 +4358,12 @@ TextureImporter:
       name: tileset-sliced_100
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 224
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3037,12 +4379,12 @@ TextureImporter:
       name: tileset-sliced_101
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 240
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3058,12 +4400,12 @@ TextureImporter:
       name: tileset-sliced_102
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3079,12 +4421,12 @@ TextureImporter:
       name: tileset-sliced_103
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3100,12 +4442,12 @@ TextureImporter:
       name: tileset-sliced_104
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3121,12 +4463,12 @@ TextureImporter:
       name: tileset-sliced_105
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3142,12 +4484,12 @@ TextureImporter:
       name: tileset-sliced_106
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3163,12 +4505,12 @@ TextureImporter:
       name: tileset-sliced_107
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3184,12 +4526,12 @@ TextureImporter:
       name: tileset-sliced_108
       rect:
         serializedVersion: 2
-        x: 240
+        x: 192
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3205,12 +4547,12 @@ TextureImporter:
       name: tileset-sliced_109
       rect:
         serializedVersion: 2
-        x: 272
+        x: 224
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3226,12 +4568,12 @@ TextureImporter:
       name: tileset-sliced_110
       rect:
         serializedVersion: 2
-        x: 304
+        x: 240
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3247,12 +4589,12 @@ TextureImporter:
       name: tileset-sliced_111
       rect:
         serializedVersion: 2
-        x: 336
+        x: 272
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3268,12 +4610,12 @@ TextureImporter:
       name: tileset-sliced_112
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 304
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3289,12 +4631,12 @@ TextureImporter:
       name: tileset-sliced_113
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 336
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3310,12 +4652,12 @@ TextureImporter:
       name: tileset-sliced_114
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3331,12 +4673,12 @@ TextureImporter:
       name: tileset-sliced_115
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3352,12 +4694,12 @@ TextureImporter:
       name: tileset-sliced_116
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3373,12 +4715,12 @@ TextureImporter:
       name: tileset-sliced_117
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3394,12 +4736,12 @@ TextureImporter:
       name: tileset-sliced_118
       rect:
         serializedVersion: 2
-        x: 208
+        x: 160
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3415,12 +4757,12 @@ TextureImporter:
       name: tileset-sliced_119
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3436,12 +4778,12 @@ TextureImporter:
       name: tileset-sliced_120
       rect:
         serializedVersion: 2
-        x: 240
+        x: 208
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3457,12 +4799,12 @@ TextureImporter:
       name: tileset-sliced_121
       rect:
         serializedVersion: 2
-        x: 272
+        x: 224
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3478,12 +4820,12 @@ TextureImporter:
       name: tileset-sliced_122
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 240
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3499,12 +4841,12 @@ TextureImporter:
       name: tileset-sliced_123
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 272
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3520,12 +4862,12 @@ TextureImporter:
       name: tileset-sliced_124
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3541,12 +4883,12 @@ TextureImporter:
       name: tileset-sliced_125
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3562,12 +4904,12 @@ TextureImporter:
       name: tileset-sliced_126
       rect:
         serializedVersion: 2
-        x: 176
+        x: 144
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3583,12 +4925,12 @@ TextureImporter:
       name: tileset-sliced_127
       rect:
         serializedVersion: 2
-        x: 208
+        x: 160
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3604,12 +4946,12 @@ TextureImporter:
       name: tileset-sliced_128
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3625,12 +4967,12 @@ TextureImporter:
       name: tileset-sliced_129
       rect:
         serializedVersion: 2
-        x: 240
+        x: 208
         y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3638,6 +4980,56 @@ TextureImporter:
       bones: []
       spriteID: 567d94dda3bec11c0800000000000000
       internalID: -4531488486988327067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-sliced_130
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: 6}
+        - {x: -8, y: 8}
+        - {x: -8, y: -7}
+        - {x: -1, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42c567691f0c6f20800000000000000
+      internalID: 3417122819050685005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset-sliced_131
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 6}
+        - {x: 1, y: -5}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01be8266527e6ce00800000000000000
+      internalID: 1064792509733464848
       vertices: []
       indices: 
       edges: []

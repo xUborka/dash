@@ -484,28 +484,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1658387212995484748}
     m_ColliderPaths:
-    - - X: 70000041
-        Y: 10000100
-      - X: 9999959
-        Y: 10000100
-      - X: 9999900
-        Y: 10000041
-      - X: 9999900
-        Y: -20000041
-      - X: 9999959
-        Y: -20000100
-      - X: 70000041
-        Y: -20000100
-      - X: 70000100
-        Y: -20000041
-      - X: 70000100
-        Y: 10000041
+    - - X: 70000000
+        Y: -20000000
+      - X: 70000000
+        Y: 10000000
+      - X: 10000000
+        Y: 10000000
+      - X: 10000000
+        Y: -20000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 6.9999743, y: -2.00001}
-      - {x: 6.9999743, y: 1.00001}
-      - {x: 0.99999, y: 0.9999748}
-      - {x: 1.0000252, y: -2.00001}
+    - - {x: 6.9999704, y: -2}
+      - {x: 6.9999704, y: 1}
+      - {x: 1, y: 0.99997073}
+      - {x: 1.0000293, y: -2}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!1 &1658387213764075369
@@ -608,10 +600,10 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: ebe42fb580f301d4cae69c5acfeb157d, type: 2}
+    m_Data: {fileID: 11400000, guid: 182c9285df5c8b447940adb4a83a8f4a, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300092, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
+    m_Data: {fileID: 21300096, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1
     m_Data:
