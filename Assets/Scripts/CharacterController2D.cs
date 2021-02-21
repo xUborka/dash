@@ -27,7 +27,7 @@ public class CharacterController2D : MonoBehaviour
     [Header("Dash")]
 
     [SerializeField] private float _startDashTime = 0.15f;
-    [SerializeField] private float _dashSpeed = 50;
+    [SerializeField] private float _dashSpeed = 100;
     private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
 
     private float _dashTime;

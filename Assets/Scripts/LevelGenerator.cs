@@ -23,7 +23,7 @@ public class LevelGenerator : MonoBehaviour
         var prevPos = Vector3Int.FloorToInt(_refLastLevel.Find("EndPosition").position);
         _lastEnd = _refLastLevel.Find("EndPosition").position;
         var startPos = Vector3Int.FloorToInt(_refLastLevel.Find("StartPosition").position);
-        _refLastLevel = Instantiate(next_levels[Random.Range(0, next_levels.Count)], prevPos, Quaternion.identity);
+        _refLastLevel = Instantiate(next_levels[4], prevPos, Quaternion.identity);
         platform_references.Add(_refLastLevel);
     }
 
