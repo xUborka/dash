@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         Animator.SetBool("PlayerJumping", false);
         Animator.SetBool("PlayerDied", true);
         GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 500.0f));
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 10.0f), ForceMode2D.Impulse);//(new Vector2(0.0f, 500.0f));
     }
 
     private void Update()

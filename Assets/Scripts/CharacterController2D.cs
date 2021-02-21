@@ -11,7 +11,7 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D _rb;
 
     [Header("Movement")]
-    [SerializeField] private float _jumpForce = 700f;                          // Amount of force added when the player jumps.
+    [SerializeField] private float _jumpForce = 20f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float _crouchSpeed = .4f;           // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .0f;  // How much to smooth out the movement
     [SerializeField] private LayerMask _whatIsGround;                          // A mask determining what is ground to the character
@@ -207,7 +207,7 @@ public class CharacterController2D : MonoBehaviour
         CreateDust();
         // Add a vertical force to the player.
         _grounded = false;
-        _rb.AddForce(force);
+        _rb.AddForce(force, ForceMode2D.Impulse);
     }
 
     private void CreateDust()
