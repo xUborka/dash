@@ -1513,6 +1513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 747064130}
   LevelGen: {fileID: 2102358583}
+  mainCamera: {fileID: 519420031}
   scoreScreen: {fileID: 366275295}
   scoreText: {fileID: 1516685169}
   countdown_screen: {fileID: 97590876}

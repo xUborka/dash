@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [Header("General")]
     [SerializeField] private Transform Player;
     [SerializeField] private LevelGenerator LevelGen;
+    [SerializeField] private Camera mainCamera;
 
     [Header("Score")]
     [SerializeField] private GameObject scoreScreen;
@@ -56,25 +57,16 @@ public class GameManager : MonoBehaviour
         if (colliders.Length > 0){
             Player.GetComponent<PlayerMovement>().SetMovement(false);
             Player.GetComponent<PlayerMovement>().KillPlayer();
-            EndGame(); //
+            GameOver(); //
         }
 
         // Game Over by falling
-        var min_y = double.PositiveInfinity;
-        foreach (Transform platform in LevelGen.platform_references)
+        if (IsOutOfBounds())
         {
-            if (platform.position.y < min_y)
-            {
-                min_y = platform.position.y;
-            }
-        }
-        
-        if (IsEndgame(min_y))
-        {
-            EndGame();
+            GameOver();
         }
 
-        if(countdown_over && !IsEndgame(min_y))
+        if (countdown_over && !IsOutOfBounds())
         {
             score += Mathf.CeilToInt(Time.deltaTime);
 
@@ -83,9 +75,28 @@ public class GameManager : MonoBehaviour
     }
 
     // TODO: Not so nice :^)
-    public bool IsEndgame(double minY) => LevelGen.platform_references.Count > 1 && Player.position.y + death_player_platform_distance < minY;
+    public bool IsOutOfBounds()
+    {
+        var minY = double.PositiveInfinity;
+        var maxY = double.NegativeInfinity;
+        foreach (var platform in LevelGen.platform_references)
+        {
+            if (platform.position.y < minY)
+            {
+                minY = platform.position.y;
+            }
 
-    public void EndGame()
+            if (platform.position.y > maxY)
+            {
+                maxY = platform.position.y;
+            }
+        }
+
+        return LevelGen.platform_references.Count > 1 && Player.position.y + death_player_platform_distance < minY 
+            || LevelGen.platform_references.Count > 1 && Player.position.y - death_player_platform_distance > maxY;
+    }
+
+    public void GameOver()
     {
         if (gameHasEnded == false)
         {
@@ -98,6 +109,8 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
+        //hack
+        Physics2D.gravity = new Vector3(0f, -9.81f, 0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
