@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         // Game Over by spikes
         Transform gcheck = Player.Find("GroundCheck"); // HACK ?
-        var colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.2f, danger_layer);
+        var colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.3f, danger_layer);
         if (colliders.Length > 0){
             Player.GetComponent<PlayerMovement>().SetMovement(false);
             Player.GetComponent<PlayerMovement>().KillPlayer();
