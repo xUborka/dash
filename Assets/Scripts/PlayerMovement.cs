@@ -61,13 +61,13 @@ public class PlayerMovement : MonoBehaviour
             // Touch touch = Input.GetTouch(0);
             foreach (Touch touch in Input.touches)
             {
-                if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f)
+                if (touch.phase == TouchPhase.Began && touch.position.x < Screen.width / 2f)
                 {
                     print("Jump Pressed!");
                     _jump = true;
                     Animator.SetBool("PlayerJumping", true);
                 }
-                if (touch.phase == TouchPhase.Stationary && touch.position.x > Screen.width / 2f)
+                if (touch.phase == TouchPhase.Began && touch.position.x > Screen.width / 2f)
                 {
                     _dash = true;
                 }

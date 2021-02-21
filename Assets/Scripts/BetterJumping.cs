@@ -20,7 +20,7 @@ namespace Assets.Scripts
                 // Touch touch = Input.GetTouch(0);
                 foreach (Touch touch in Input.touches)
                 {
-                    if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f)
+                    if (touch.position.x < Screen.width / 2f)
                     {
                         return true;
                     }
