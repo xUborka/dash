@@ -11,7 +11,7 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D _rb;
 
     [Header("Movement")]
-    [SerializeField] private float _jumpForce = 20f;                          // Amount of force added when the player jumps.
+    [SerializeField] private float _jumpForce = 40f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float _crouchSpeed = .4f;           // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .0f;  // How much to smooth out the movement
     [SerializeField] private LayerMask _whatIsGround;                          // A mask determining what is ground to the character
@@ -27,7 +27,7 @@ public class CharacterController2D : MonoBehaviour
     [Header("Dash")]
 
     [SerializeField] private float _startDashTime = 0.15f;
-    [SerializeField] private float _dashSpeed = 100;
+    [SerializeField] private float _dashSpeed = 50;
     private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
 
     private float _dashTime;
@@ -66,9 +66,7 @@ public class CharacterController2D : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
 
         OnLandEvent = OnLandEvent ?? new UnityEvent();
-
         OnCrouchEvent = OnCrouchEvent ?? new BoolEvent();
-
         OnDashEvent = OnDashEvent ?? new BoolEvent();
     }
 
@@ -206,8 +204,9 @@ public class CharacterController2D : MonoBehaviour
     {
         CreateDust();
         // Add a vertical force to the player.
-        _grounded = false;
-        _rb.AddForce(force, ForceMode2D.Impulse);
+        _grounded = false; 
+        _rb.velocity = new Vector2(_rb.velocity.x, 0.0f); // Remove current y velocity
+        _rb.velocity += Vector2.up * _jumpForce;
     }
 
     private void CreateDust()

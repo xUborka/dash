@@ -18,9 +18,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void KillPlayer(){
         Animator.SetBool("PlayerJumping", false);
+        Animator.SetBool("PlayerDashing", false);
         Animator.SetBool("PlayerDied", true);
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 10.0f), ForceMode2D.Impulse);//(new Vector2(0.0f, 500.0f));
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 10.0f);
     }
 
     private void Update()
@@ -61,13 +61,13 @@ public class PlayerMovement : MonoBehaviour
             // Touch touch = Input.GetTouch(0);
             foreach (Touch touch in Input.touches)
             {
-                if (touch.phase == TouchPhase.Began && touch.position.x < Screen.width / 2f)
+                if (touch.phase == TouchPhase.Stationary && touch.position.x < Screen.width / 2f)
                 {
                     print("Jump Pressed!");
                     _jump = true;
                     Animator.SetBool("PlayerJumping", true);
                 }
-                if (touch.phase == TouchPhase.Began && touch.position.x > Screen.width / 2f)
+                if (touch.phase == TouchPhase.Stationary && touch.position.x > Screen.width / 2f)
                 {
                     _dash = true;
                 }
