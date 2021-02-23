@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _jump;
     private bool _crouch;
     private bool _dash;
-    private bool _enabled = false;
+    public bool _enabled = false;
 
     public void SetMovement(bool val)
     {
