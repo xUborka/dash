@@ -26,6 +26,12 @@
 # Visual Studio cache directory
 .vs/
 
+# Linux Build Crap
+*.debug
+*.so
+*.x86_64
+lnx_build_Data/
+
 # Gradle cache directory
 .gradle/
 

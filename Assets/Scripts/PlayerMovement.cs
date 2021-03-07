@@ -3,13 +3,17 @@
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
-    private float _horizontalMove = 0f;
-    public float RunSpeed = 50;
+    private Rigidbody2D _rigidbody;
     public Animator Animator;
     private bool _jump;
     private bool _crouch;
     private bool _dash;
-    public bool _enabled = false;
+    public bool _enabled;
+
+    public void Awake(){
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _enabled = false;
+    }
 
     public void SetMovement(bool val)
     {
@@ -20,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         Animator.SetBool("PlayerJumping", false);
         Animator.SetBool("PlayerDashing", false);
         Animator.SetBool("PlayerDied", true);
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 10.0f);
+        _rigidbody.velocity = new Vector2(0.0f, 10.0f);
     }
 
     private void Update()
@@ -29,8 +33,7 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        _horizontalMove = RunSpeed;
-        Animator.SetFloat("PlayerSpeed", Mathf.Abs(_horizontalMove));
+        Animator.SetFloat("PlayerSpeed", Mathf.Abs(_rigidbody.velocity.x));
         if (Input.GetButtonDown("Jump"))
         {
             _jump = true;
@@ -74,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        Controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
+        Controller.Move(_crouch, _jump, _dash);
         _jump = false;
     }
 

@@ -29,15 +29,15 @@ namespace Assets.Scripts
             return false;
         }
 
-        void Update()
+        void FixedUpdate()
         {
             if (rb.velocity.y < 0)
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
             }
             else if (rb.velocity.y > 0 && (!Input.GetButton("Jump") && !TouchJump()))
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
             }
         }
     }

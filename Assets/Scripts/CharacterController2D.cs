@@ -19,10 +19,12 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform _ceilingCheck;                          // A position marking where to check for ceilings
     [SerializeField] private Collider2D _crouchDisableCollider;                // A collider that will be disabled when crouching
 
+    private float _horizontalMove = 0f;
+    public float RunSpeed = 50;
 
     [Header("Jump")]
     [SerializeField] private float _hangTime = 0.5f;
-    [SerializeField] private float _jumpBufferLength = 0.1f;
+    [SerializeField] private float _jumpBufferLength = 0.25f;
 
     [Header("Dash")]
 
@@ -56,9 +58,18 @@ public class CharacterController2D : MonoBehaviour
 
     private bool CanJump => _jumpBufferCounter > 0.0f && _hangTimeCounter > 0.0f;
 
+    private float move;
+    private bool jump;
+    private bool crouch;
+    private bool dash;
+
     private void Start()
     {
         _dashTime = _startDashTime;
+        move = 0.0f;
+        jump = false;
+        crouch = false;
+        dash = false;
     }
 
     private void Awake()
@@ -91,8 +102,19 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
-    public void Move(float move, bool crouch, bool jump, bool dash)
+    public void Move(bool _crouch, bool _jump, bool _dash)
     {
+        move = RunSpeed;
+        crouch = _crouch;
+        jump = jump || _jump;
+        dash = _dash;
+        print("Move: " + jump.ToString());
+    }
+
+    public void FixedUpdate(){
+        print("Fixed Update: " + jump.ToString());
+        move = move * Time.fixedDeltaTime;
+        // print(_rb.velocity.y);
         // If crouching, check to see if the character can stand up
         if (!crouch)
         {
@@ -156,8 +178,10 @@ public class CharacterController2D : MonoBehaviour
         }
 
         // If the player should jump...
+        // print(_jumpBufferCounter.ToString() + " " + _hangTimeCounter.ToString());
         if (CanJump)
         {
+            jump = false;
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
         }
@@ -202,6 +226,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void Jump(Vector2 force)
     {
+        print("Jump!!");
         CreateDust();
         // Add a vertical force to the player.
         _grounded = false; 
