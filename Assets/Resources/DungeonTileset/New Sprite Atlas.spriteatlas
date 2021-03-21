@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -696727085508072057, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -8882664516061552099, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 858041835714966411, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -2552685476711689849, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 3876541574103852242, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -7408722542515513348, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 811525172754251266, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -5717145564588284885, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -2242923666598201122, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -794231664657642990, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 1915616407412076738, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -6939319655583203568, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - new_tileset_9
+  - new_tileset_8
+  - new_tileset_3
+  - new_tileset_2
+  - new_tileset_1
+  - new_tileset_0
+  - new_tileset_7
+  - new_tileset_6
+  - new_tileset_5
+  - new_tileset_4
+  - new_tileset_10
+  - new_tileset_11
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
