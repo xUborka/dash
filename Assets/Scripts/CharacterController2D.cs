@@ -11,48 +11,36 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D _rb;
 
     [Header("Movement")]
-    [SerializeField] private float _jumpForce = 40f;                          // Amount of force added when the player jumps.
-    [Range(0, 1)] [SerializeField] private float _crouchSpeed = .4f;           // Amount of maxSpeed applied to crouching movement. 1 = 100%
-    [Range(0, .3f)] [SerializeField] private float _movementSmoothing = .0f;  // How much to smooth out the movement
-    [SerializeField] private LayerMask _whatIsGround;                          // A mask determining what is ground to the character
-    [SerializeField] private Transform _groundCheck;                           // A position marking where to check if the player is grounded.
-    [SerializeField] private Transform _ceilingCheck;                          // A position marking where to check for ceilings
-    [SerializeField] private Collider2D _crouchDisableCollider;                // A collider that will be disabled when crouching
-
-    private float _horizontalMove = 0f;
-    public float RunSpeed = 50;
+    [SerializeField] private float _jumpForce = 15f;                            // Amount of force added when the player jumps.
+    [SerializeField] private LayerMask _whatIsGround;                           // A mask determining what is ground to the character
+    [SerializeField] private Transform _groundCheck;                            // A position marking where to check if the player is grounded.
+    [SerializeField] private Transform _ceilingCheck;                           // A position marking where to check for ceilings
+    [SerializeField] private Collider2D _crouchDisableCollider;                 // A collider that will be disabled when crouching
+    [SerializeField] private float RunSpeed = 50;
 
     [Header("Jump")]
     [SerializeField] private float _hangTime = 0.5f;
     [SerializeField] private float _jumpBufferLength = 0.25f;
-
-    [Header("Dash")]
-
-    [SerializeField] private float _startDashTime = 0.15f;
-    [SerializeField] private float _dashSpeed = 50;
-    private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
-
-    private float _dashTime;
-
     private float _hangTimeCounter;
     private float _jumpBufferCounter;
 
-    private const float KGroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
+    [Header("Dash")]
+    [SerializeField] private float _startDashTime = 0.15f;
+    [SerializeField] private float _dashSpeed = 50;
+    private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
+    private float _dashTime;
+
     private bool _grounded;            // Whether or not the player is grounded.
+    private const float KGroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private const float KCeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 
-    private Vector3 _velocity = Vector3.zero;
-
     [Header("Events")]
-    [Space]
-
     public UnityEvent OnLandEvent;
-
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
-
     public BoolEvent OnCrouchEvent;
     public BoolEvent OnDashEvent;
+
     private bool _wasCrouching = false;
     private bool _wasDashing = false;
 
@@ -142,9 +130,6 @@ public class CharacterController2D : MonoBehaviour
                     OnCrouchEvent.Invoke(true);
                 }
 
-                // Reduce the speed by the crouchSpeed multiplier
-                move *= _crouchSpeed;
-
                 // Disable one of the colliders when crouching
                 if (_crouchDisableCollider != null)
                     _crouchDisableCollider.enabled = false;
@@ -162,10 +147,7 @@ public class CharacterController2D : MonoBehaviour
                 }
             }
 
-            // Move the character by finding the target velocity
-            Vector3 targetVelocity = new Vector2(move * 10f, _rb.velocity.y);
-            // And then smoothing it out and applying it to the character
-            _rb.velocity = Vector3.SmoothDamp(_rb.velocity, targetVelocity, ref _velocity, _movementSmoothing);
+            _rb.velocity = new Vector2(move * 10f, _rb.velocity.y);
         }
 
         Dash(dash);
