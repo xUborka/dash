@@ -57,9 +57,10 @@ public class GameManager : MonoBehaviour
         BoxCollider2D head = Player.GetComponent<BoxCollider2D>();
         var leg_colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.3f, danger_layer);
         var head_colliders = Physics2D.OverlapCircleAll(ccheck.position, 0.3f, danger_layer);
-        if (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled)){
+        if (Player.GetComponent<PlayerMovementInputHandler>()._enabled && (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled))){
             Player.GetComponent<PlayerMovementInputHandler>().SetMovement(false);
             Player.GetComponent<PlayerMovementAnimator>().KillPlayer();
+            Player.GetComponent<CharacterController2D>().die();
             GameOver(); //
         }
 

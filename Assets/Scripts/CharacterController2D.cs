@@ -30,7 +30,7 @@ public class CharacterController2D : MonoBehaviour
     private Vector2 velocity_before_dash = new Vector2(0.0f, 0.0f);
     private float _dashTime;
 
-    private bool _grounded;            // Whether or not the player is grounded.
+    private bool _grounded = true;            // Whether or not the player is grounded.
     private const float KGroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private const float KCeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 
@@ -40,6 +40,13 @@ public class CharacterController2D : MonoBehaviour
     public class BoolEvent : UnityEvent<bool> { }
     public BoolEvent OnCrouchEvent;
     public BoolEvent OnDashEvent;
+
+    [Header("Audio")]
+    public AudioClip jumpAudio;
+    public AudioClip landAudio;
+    public AudioClip deathAudio;
+    public AudioClip dashAudio;
+
 
     private bool _wasCrouching = false;
     private bool _wasDashing = false;
@@ -58,6 +65,10 @@ public class CharacterController2D : MonoBehaviour
         jump = false;
         crouch = false;
         dash = false;
+    }
+
+    public void die(){
+        GetComponent<AudioSource>().PlayOneShot(deathAudio);
     }
 
     private void Awake()
@@ -85,6 +96,8 @@ public class CharacterController2D : MonoBehaviour
                 if (!wasGrounded)
                 {
                     OnLandEvent.Invoke();
+                GetComponent<AudioSource>().PlayOneShot(landAudio, 0.3f);
+
                 }
             }
         }
@@ -167,6 +180,7 @@ public class CharacterController2D : MonoBehaviour
         // print(_jumpBufferCounter.ToString() + " " + _hangTimeCounter.ToString());
         if (CanJump)
         {
+            GetComponent<AudioSource>().PlayOneShot(jumpAudio);
             jump = false;
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
