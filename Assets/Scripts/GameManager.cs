@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
                 countdown_over = true;
                 countdown_screen.SetActive(false);
                 scoreScreen.SetActive(true);
-                Player.GetComponent<PlayerMovement>().SetMovement(true);
+                Player.GetComponent<PlayerMovementInputHandler>().SetMovement(true);
             }
         }
 
@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour
         var leg_colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.3f, danger_layer);
         var head_colliders = Physics2D.OverlapCircleAll(ccheck.position, 0.3f, danger_layer);
         if (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled)){
-            Player.GetComponent<PlayerMovement>().SetMovement(false);
-            Player.GetComponent<PlayerMovement>().KillPlayer();
+            Player.GetComponent<PlayerMovementInputHandler>().SetMovement(false);
+            Player.GetComponent<PlayerMovementAnimator>().KillPlayer();
             GameOver(); //
         }
 

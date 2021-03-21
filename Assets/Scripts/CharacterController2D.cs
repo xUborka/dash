@@ -112,8 +112,8 @@ public class CharacterController2D : MonoBehaviour
     }
 
     public void FixedUpdate(){
-        print("Fixed Update: " + jump.ToString());
         move = move * Time.fixedDeltaTime;
+        GetComponent<PlayerMovementAnimator>().SetPlayerSpeed(move);
         // print(_rb.velocity.y);
         // If crouching, check to see if the character can stand up
         if (!crouch)
@@ -184,6 +184,7 @@ public class CharacterController2D : MonoBehaviour
             jump = false;
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
+            GetComponent<PlayerMovementAnimator>().OnJumping();
         }
     }
 

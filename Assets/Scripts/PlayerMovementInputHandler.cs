@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementInputHandler : MonoBehaviour
 {
     public CharacterController2D Controller;
-    public Animator Animator;
     private bool _jump;
     private bool _crouch;
     private bool _dash;
@@ -16,12 +15,6 @@ public class PlayerMovement : MonoBehaviour
     public void SetMovement(bool val)
     {
         _enabled = val;
-    }
-
-    public void KillPlayer(){
-        Animator.SetBool("PlayerJumping", false);
-        Animator.SetBool("PlayerDashing", false);
-        Animator.SetBool("PlayerDied", true);
     }
 
     private void Update()
@@ -72,29 +65,5 @@ public class PlayerMovement : MonoBehaviour
 
         Controller.Move(_crouch, _jump, _dash);
         _jump = false;
-    }
-
-    public void SetPlayerMovementAnimation(float velocity){
-        Animator.SetFloat("PlayerSpeed", Mathf.Abs(velocity));
-    }
-
-    public void OnJumping(){
-        Animator.SetBool("PlayerJumping", true);
-    }
-
-    public void OnLanding()
-    {
-        Animator.SetBool("PlayerJumping", false);
-    }
-
-    public void OnCrouching(bool isCrouching)
-    {
-        Animator.SetBool("PlayerCrouching", isCrouching);
-    }
-
-    public void OnDashing(bool isDashing)
-    {
-        _dash = isDashing;
-        Animator.SetBool("PlayerDashing", isDashing);
     }
 }
