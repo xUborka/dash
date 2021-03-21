@@ -3,7 +3,6 @@
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
-    private Rigidbody2D _rigidbody;
     public Animator Animator;
     private bool _jump;
     private bool _crouch;
@@ -11,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public bool _enabled;
 
     public void Awake(){
-        _rigidbody = GetComponent<Rigidbody2D>();
         _enabled = false;
     }
 
@@ -24,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         Animator.SetBool("PlayerJumping", false);
         Animator.SetBool("PlayerDashing", false);
         Animator.SetBool("PlayerDied", true);
-        _rigidbody.velocity = new Vector2(0.0f, 10.0f);
     }
 
     private void Update()
@@ -33,11 +30,9 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        Animator.SetFloat("PlayerSpeed", Mathf.Abs(_rigidbody.velocity.x));
         if (Input.GetButtonDown("Jump"))
         {
             _jump = true;
-            Animator.SetBool("PlayerJumping", true);
         }
         if (Input.GetButtonDown("Crouch"))
         {
@@ -66,9 +61,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (touch.phase == TouchPhase.Began && touch.position.x < Screen.width / 2f)
                 {
-                    print("Jump Pressed!");
                     _jump = true;
-                    Animator.SetBool("PlayerJumping", true);
                 }
                 if (touch.phase == TouchPhase.Began && touch.position.x > Screen.width / 2f)
                 {
@@ -79,6 +72,14 @@ public class PlayerMovement : MonoBehaviour
 
         Controller.Move(_crouch, _jump, _dash);
         _jump = false;
+    }
+
+    public void SetPlayerMovementAnimation(float velocity){
+        Animator.SetFloat("PlayerSpeed", Mathf.Abs(velocity));
+    }
+
+    public void OnJumping(){
+        Animator.SetBool("PlayerJumping", true);
     }
 
     public void OnLanding()

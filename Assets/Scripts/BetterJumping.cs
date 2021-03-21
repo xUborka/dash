@@ -8,7 +8,7 @@ namespace Assets.Scripts
         public float fallMultiplier = 2.5f;
         public float lowJumpMultiplier = 2f;
 
-        void Start()
+        void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
         }
