@@ -41,10 +41,6 @@ public class PlayerMovementInputHandler : MonoBehaviour
         {
             _dash = true;
         }
-        else if (Input.GetButtonUp("Dash"))
-        {
-            _dash = false;
-        }
 
         // Touch
         if (Input.touchCount > 0)
@@ -65,5 +61,6 @@ public class PlayerMovementInputHandler : MonoBehaviour
 
         Controller.Move(_crouch, _jump, _dash);
         _jump = false;
+        _dash = false;
     }
 }

@@ -95,7 +95,7 @@ public class CharacterController2D : MonoBehaviour
         move = RunSpeed;
         crouch = _crouch;
         jump = jump || _jump;
-        dash = _dash;
+        dash = dash || _dash;
     }
 
     public void FixedUpdate(){
@@ -150,7 +150,7 @@ public class CharacterController2D : MonoBehaviour
             _rb.velocity = new Vector2(move * 10f, _rb.velocity.y);
         }
 
-        Dash(dash);
+        Dash();
 
         _hangTimeCounter -= Time.fixedDeltaTime;
 
@@ -174,7 +174,7 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
-    private void Dash(bool dash)
+    private void Dash()
     {
         if (dash)
         {
@@ -209,6 +209,7 @@ public class CharacterController2D : MonoBehaviour
                 OnDashEvent.Invoke(false);
             }
         }
+        // dash = false;
     }
 
     private void Jump(Vector2 force)
