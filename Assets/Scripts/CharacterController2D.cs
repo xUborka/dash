@@ -108,11 +108,15 @@ public class CharacterController2D : MonoBehaviour
         crouch = _crouch;
         jump = jump || _jump;
         dash = _dash;
-        print("Move: " + jump.ToString());
     }
 
     public void FixedUpdate(){
-        move = move * Time.fixedDeltaTime;
+        if (GetComponent<PlayerMovementInputHandler>()._enabled){
+            move = RunSpeed * Time.fixedDeltaTime;
+        } else {
+            move = 0f;
+        }
+        print("Move: " + move.ToString());
         GetComponent<PlayerMovementAnimator>().SetPlayerSpeed(move);
         // print(_rb.velocity.y);
         // If crouching, check to see if the character can stand up
