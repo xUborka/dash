@@ -10,6 +10,7 @@ public class PlayerMovementInputHandler : MonoBehaviour
 
     public void Awake(){
         _enabled = false;
+        _crouch = false;
     }
 
     public void SetMovement(bool val)
@@ -27,15 +28,15 @@ public class PlayerMovementInputHandler : MonoBehaviour
         {
             _jump = true;
         }
-        if (Input.GetButtonDown("Crouch"))
-        {
-            _crouch = true;
+        // if (Input.GetButtonDown("Crouch"))
+        // {
+        //     _crouch = true;
 
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
-            _crouch = false;
-        }
+        // }
+        // else if (Input.GetButtonUp("Crouch"))
+        // {
+        //     _crouch = false;
+        // }
 
         if (Input.GetButtonDown("Dash"))
         {
