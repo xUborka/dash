@@ -201,8 +201,9 @@ public class CharacterController2D : MonoBehaviour
                 PostProcessVolume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<PostProcessVolume>();
                 ChromaticAberration ca;
                 ppv.profile.TryGetSettings(out ca);
-                float value = 0.5f;
+                float value = 1.0f;
                 ca.intensity.value = value;
+                GetComponent<AudioSource>().PlayOneShot(dashAudio);
             }
 
             if (_dashTime <= 0.0f)
