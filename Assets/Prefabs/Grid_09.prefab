@@ -359,27 +359,27 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: f2f90ac6e8b9ae442bf90571de28008a, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 8
-    m_Data: {fileID: 11400000, guid: f67634ccd72187d45b25e4e305f7e504, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 8
-    m_Data: {fileID: 11400000, guid: a024c6d111f6dd4448c819c2fdd4f650, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 8
-    m_Data: {fileID: 11400000, guid: daa5217c7825a5c438a4f8f417bb61a6, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 9b3819c568c7dc741800978f902ce92a, type: 2}
-  - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 99071194c9869d44bb824b424be96561, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 247eae9cf6a7fd140b989457ba42d522, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 65956ffa9698cec4d91b0fee1d65d014, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 73986ee3498447a4d81a4fc7b9701336, type: 2}
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -506,7 +506,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -747,9 +747,9 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 737e7a77b1340c74ea00e1c0449351c1, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 182c9285df5c8b447940adb4a83a8f4a, type: 2}
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300098, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
@@ -821,7 +821,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -2,7 +2,9 @@
 using UnityEngine.Events;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
-using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -97,7 +99,7 @@ public class CharacterController2D : MonoBehaviour
                 if (!wasGrounded)
                 {
                     OnLandEvent.Invoke();
-                GetComponent<AudioSource>().PlayOneShot(landAudio, 0.3f);
+                GetComponent<AudioSource>().PlayOneShot(landAudio, 1f);
 
                 }
             }
@@ -198,12 +200,12 @@ public class CharacterController2D : MonoBehaviour
                 velocity_before_dash = _rb.velocity;
                 _wasDashing = true;
                 OnDashEvent.Invoke(true);
-                PostProcessVolume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<PostProcessVolume>();
+                Volume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<Volume>();
                 ChromaticAberration ca;
-                ppv.profile.TryGetSettings(out ca);
+                ppv.profile.TryGet<ChromaticAberration>(out ca);
                 float value = 1.0f;
                 ca.intensity.value = value;
-                GetComponent<AudioSource>().PlayOneShot(dashAudio);
+                GetComponent<AudioSource>().PlayOneShot(dashAudio, 0.5f);
             }
 
             if (_dashTime <= 0.0f)
@@ -211,9 +213,9 @@ public class CharacterController2D : MonoBehaviour
                 _rb.velocity = new Vector2(velocity_before_dash.x, _rb.velocity.y);
                 dash = false;
                 OnDashEvent.Invoke(false);
-                PostProcessVolume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<PostProcessVolume>();
+                Volume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<Volume>();
                 ChromaticAberration ca;
-                ppv.profile.TryGetSettings(out ca);
+                ppv.profile.TryGet<ChromaticAberration>(out ca);
                 float value = 0.0f;
                 ca.intensity.value = value;
             }

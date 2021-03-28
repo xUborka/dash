@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: 6344729218993575264
     second: new_tileset_15
+  - first:
+      213: -7416749949327414578
+    second: new_tileset_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,7 +173,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: cf71fe5c91eee2990800000000000000
@@ -421,7 +428,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -8, y: -1}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -1}
       physicsShape:
       - - {x: -4, y: -2}
         - {x: -6, y: -8}
@@ -494,6 +505,27 @@ TextureImporter:
       bones: []
       spriteID: 065572edb910d0850800000000000000
       internalID: 6344729218993575264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca617a7739621990800000000000000
+      internalID: -7416749949327414578
       vertices: []
       indices: 
       edges: []
