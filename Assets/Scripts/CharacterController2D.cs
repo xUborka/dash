@@ -75,6 +75,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void die(){
         audioSource.PlayOneShot(deathAudio);
+        playerInputHandler.SetMovement(false);
         playerMovementAnimator.KillPlayer();
     }
 

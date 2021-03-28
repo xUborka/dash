@@ -59,53 +59,12 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        // Game Over by spikes
-        // Replace with collision, etc
-        Transform gcheck = Player.Find("GroundCheck"); // HACK ?
-        Transform ccheck = Player.Find("CeilingCheck"); // HACK ?
-        BoxCollider2D head = Player.GetComponent<BoxCollider2D>();
-        var leg_colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.3f, danger_layer);
-        var head_colliders = Physics2D.OverlapCircleAll(ccheck.position, 0.3f, danger_layer);
-        if (playerInputHandler._enabled && (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled))){
-            playerInputHandler.SetMovement(false);
-            characterController.die();
-            GameOver(); //
-        }
-
-        // Game Over by falling
-        if (IsOutOfBounds())
-        {
-            GameOver();
-        }
-
-        if (countdown_over && !IsOutOfBounds())
+        if (countdown_over)
         {
             score += Mathf.CeilToInt(Time.deltaTime);
 
             scoreText.GetComponent<TextMeshProUGUI>().SetText($"Score: {score}");
         }
-    }
-
-    // TODO: Not so nice :^)
-    public bool IsOutOfBounds()
-    {
-        var minY = double.PositiveInfinity;
-        var maxY = double.NegativeInfinity;
-        foreach (var platform in LevelGen.platform_references)
-        {
-            if (platform.position.y < minY)
-            {
-                minY = platform.position.y;
-            }
-
-            if (platform.position.y > maxY)
-            {
-                maxY = platform.position.y;
-            }
-        }
-
-        return LevelGen.platform_references.Count > 1 && Player.position.y + death_player_platform_distance < minY 
-            || LevelGen.platform_references.Count > 1 && Player.position.y - death_player_platform_distance > maxY;
     }
 
     public void GameOver()
