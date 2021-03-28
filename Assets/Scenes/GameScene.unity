@@ -915,7 +915,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _groundCheck: {fileID: 1519769289}
-  RunSpeed: 40
+  RunSpeed: 35
   _hangTime: 0.1
   _jumpBufferLength: 0.1
   _startDashTime: 0.1

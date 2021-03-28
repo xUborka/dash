@@ -56,12 +56,20 @@ SpriteAtlas:
   - {fileID: -5717145564588284885, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -2242923666598201122, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -794231664657642990, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -3985972896127182484, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -2058477596989047248, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -4073987271035730414, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 1551965237239487612, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -2578584273462865294, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 9150501977173921840, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -7416749949327414578, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 8174316790176231545, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 8130418697035110229, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -90460076809860573, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -7256310234036499934, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: 3935527045854409349, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 6344729218993575264, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
+  - {fileID: -2586814572404435027, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 2905651674350695459, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -3340570435820601535, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 1915616407412076738, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
@@ -77,12 +85,20 @@ SpriteAtlas:
   - new_tileset_6
   - new_tileset_5
   - new_tileset_4
+  - new_tileset_23
+  - new_tileset_22
   - new_tileset_18
+  - new_tileset_21
   - new_tileset_19
+  - new_tileset_20
   - new_tileset_16
+  - new_tileset_27
   - new_tileset_17
+  - new_tileset_26
   - new_tileset_14
+  - new_tileset_25
   - new_tileset_15
+  - new_tileset_24
   - new_tileset_12
   - new_tileset_13
   - new_tileset_10
