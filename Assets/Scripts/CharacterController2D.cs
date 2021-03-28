@@ -156,6 +156,8 @@ public class CharacterController2D : MonoBehaviour
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
             playerMovementAnimator.OnJumping();
+        } else {
+            jump = false;
         }
     }
 
