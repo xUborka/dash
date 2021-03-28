@@ -77,6 +77,7 @@ public class CharacterController2D : MonoBehaviour
         audioSource.PlayOneShot(deathAudio);
         playerInputHandler.SetMovement(false);
         playerMovementAnimator.KillPlayer();
+        _rb.velocity = new Vector2(0.0f, 0.0f);
     }
 
     private void Awake()
