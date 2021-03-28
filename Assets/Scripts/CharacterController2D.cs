@@ -17,8 +17,6 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float _jumpForce = 15f;                            // Amount of force added when the player jumps.
     [SerializeField] private LayerMask _whatIsGround;                           // A mask determining what is ground to the character
     [SerializeField] private Transform _groundCheck;                            // A position marking where to check if the player is grounded.
-    [SerializeField] private Transform _ceilingCheck;                           // A position marking where to check for ceilings
-    [SerializeField] private Collider2D _crouchDisableCollider;                 // A collider that will be disabled when crouching
     [SerializeField] private float RunSpeed = 50;
 
     [Header("Jump")]
@@ -35,7 +33,6 @@ public class CharacterController2D : MonoBehaviour
 
     private bool _grounded = true;            // Whether or not the player is grounded.
     private const float KGroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
-    private const float KCeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 
     [Header("Events")]
     public UnityEvent OnLandEvent;
@@ -88,8 +85,6 @@ public class CharacterController2D : MonoBehaviour
         var wasGrounded = _grounded;
         _grounded = false;
 
-        // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         var colliders = Physics2D.OverlapCircleAll(_groundCheck.position, KGroundedRadius, _whatIsGround);
         foreach (var t in colliders)
         {
@@ -106,10 +101,9 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
-    public void Move(bool _crouch, bool _jump, bool _dash)
+    public void Move(bool _jump, bool _dash)
     {
         move = RunSpeed;
-        crouch = _crouch;
         jump = jump || _jump;
         dash = dash || _dash;
     }
@@ -122,47 +116,11 @@ public class CharacterController2D : MonoBehaviour
         }
         print("Move: " + move.ToString());
         GetComponent<PlayerMovementAnimator>().SetPlayerSpeed(move);
-        // print(_rb.velocity.y);
-        // If crouching, check to see if the character can stand up
-        if (!crouch)
-        {
-            // If the character has a ceiling preventing them from standing up, keep them crouching
-            if (Physics2D.OverlapCircle(_ceilingCheck.position, KCeilingRadius, _whatIsGround))
-            {
-                crouch = true;
-            }
-        }
 
         //only control the player if grounded or airControl is turned on
         if (_grounded)
         {
             _hangTimeCounter = _hangTime;
-            // If crouching
-            if (crouch)
-            {
-                if (!_wasCrouching)
-                {
-                    _wasCrouching = true;
-                    OnCrouchEvent.Invoke(true);
-                }
-
-                // Disable one of the colliders when crouching
-                if (_crouchDisableCollider != null)
-                    _crouchDisableCollider.enabled = false;
-            }
-            else
-            {
-                // Enable the collider when not crouching
-                if (_crouchDisableCollider != null)
-                    _crouchDisableCollider.enabled = true;
-
-                if (_wasCrouching)
-                {
-                    _wasCrouching = false;
-                    OnCrouchEvent.Invoke(false);
-                }
-            }
-
             _rb.velocity = new Vector2(move * 10f, _rb.velocity.y);
         }
 
@@ -179,8 +137,6 @@ public class CharacterController2D : MonoBehaviour
             _jumpBufferCounter -= Time.fixedDeltaTime;
         }
 
-        // If the player should jump...
-        // print(_jumpBufferCounter.ToString() + " " + _hangTimeCounter.ToString());
         if (CanJump)
         {
             GetComponent<AudioSource>().PlayOneShot(jumpAudio);
@@ -242,7 +198,6 @@ public class CharacterController2D : MonoBehaviour
 
     private void Jump(Vector2 force)
     {
-        print("Jump!!");
         CreateDust();
         // Add a vertical force to the player.
         _grounded = false; 

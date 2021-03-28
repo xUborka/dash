@@ -4,13 +4,11 @@ public class PlayerMovementInputHandler : MonoBehaviour
 {
     public CharacterController2D Controller;
     private bool _jump;
-    private bool _crouch;
     private bool _dash;
     public bool _enabled;
 
     public void Awake(){
         _enabled = false;
-        _crouch = false;
     }
 
     public void SetMovement(bool val)
@@ -28,15 +26,6 @@ public class PlayerMovementInputHandler : MonoBehaviour
         {
             _jump = true;
         }
-        // if (Input.GetButtonDown("Crouch"))
-        // {
-        //     _crouch = true;
-
-        // }
-        // else if (Input.GetButtonUp("Crouch"))
-        // {
-        //     _crouch = false;
-        // }
 
         if (Input.GetButtonDown("Dash"))
         {
@@ -60,7 +49,7 @@ public class PlayerMovementInputHandler : MonoBehaviour
             }
         }
 
-        Controller.Move(_crouch, _jump, _dash);
+        Controller.Move(_jump, _dash);
         _jump = false;
         _dash = false;
     }
