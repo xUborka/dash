@@ -14,6 +14,8 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D _rb;
 
     [Header("Movement")]
+    private PlayerMovementInputHandler playerInputHandler;
+    private PlayerMovementAnimator playerMovementAnimator;
     [SerializeField] private float _jumpForce = 15f;                            // Amount of force added when the player jumps.
     [SerializeField] private LayerMask _whatIsGround;                           // A mask determining what is ground to the character
     [SerializeField] private Transform _groundCheck;                            // A position marking where to check if the player is grounded.
@@ -42,10 +44,14 @@ public class CharacterController2D : MonoBehaviour
     public BoolEvent OnDashEvent;
 
     [Header("Audio")]
+    AudioSource audioSource;
     public AudioClip jumpAudio;
     public AudioClip landAudio;
     public AudioClip deathAudio;
     public AudioClip dashAudio;
+
+    [Header("Post-Processing")]
+    private Volume post_processing_volume;
 
 
     private bool _wasCrouching = false;
@@ -68,12 +74,17 @@ public class CharacterController2D : MonoBehaviour
     }
 
     public void die(){
-        GetComponent<AudioSource>().PlayOneShot(deathAudio);
+        audioSource.PlayOneShot(deathAudio);
+        playerMovementAnimator.KillPlayer();
     }
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        post_processing_volume = GameObject.Find("GlobalPostProcessing").GetComponent<Volume>();
+        audioSource = GetComponent<AudioSource>();
+        playerInputHandler = GetComponent<PlayerMovementInputHandler>();
+        playerMovementAnimator = GetComponent<PlayerMovementAnimator>();
 
         OnLandEvent = OnLandEvent ?? new UnityEvent();
         OnCrouchEvent = OnCrouchEvent ?? new BoolEvent();
@@ -94,7 +105,7 @@ public class CharacterController2D : MonoBehaviour
                 if (!wasGrounded)
                 {
                     OnLandEvent.Invoke();
-                GetComponent<AudioSource>().PlayOneShot(landAudio, 1f);
+                audioSource.PlayOneShot(landAudio, 1f);
 
                 }
             }
@@ -109,13 +120,13 @@ public class CharacterController2D : MonoBehaviour
     }
 
     public void FixedUpdate(){
-        if (GetComponent<PlayerMovementInputHandler>()._enabled){
+        if (playerInputHandler._enabled){
             move = RunSpeed * Time.fixedDeltaTime;
         } else {
             move = 0f;
         }
         print("Move: " + move.ToString());
-        GetComponent<PlayerMovementAnimator>().SetPlayerSpeed(move);
+        playerMovementAnimator.SetPlayerSpeed(move);
 
         //only control the player if grounded or airControl is turned on
         if (_grounded)
@@ -139,12 +150,18 @@ public class CharacterController2D : MonoBehaviour
 
         if (CanJump)
         {
-            GetComponent<AudioSource>().PlayOneShot(jumpAudio);
+            audioSource.PlayOneShot(jumpAudio);
             jump = false;
             Jump(new Vector2(0f, _jumpForce));
             _hangTimeCounter = _jumpBufferCounter = 0;
-            GetComponent<PlayerMovementAnimator>().OnJumping();
+            playerMovementAnimator.OnJumping();
         }
+    }
+
+    private void setChromaticAberration(float value){
+        ChromaticAberration ca;
+        post_processing_volume.profile.TryGet<ChromaticAberration>(out ca);
+        ca.intensity.value = value;
     }
 
     private void Dash()
@@ -156,12 +173,9 @@ public class CharacterController2D : MonoBehaviour
                 velocity_before_dash = _rb.velocity;
                 _wasDashing = true;
                 OnDashEvent.Invoke(true);
-                Volume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<Volume>();
-                ChromaticAberration ca;
-                ppv.profile.TryGet<ChromaticAberration>(out ca);
-                float value = 1.0f;
-                ca.intensity.value = value;
-                GetComponent<AudioSource>().PlayOneShot(dashAudio, 0.5f);
+                audioSource.PlayOneShot(dashAudio, 0.5f);
+                setChromaticAberration(1.0f);
+
             }
 
             if (_dashTime <= 0.0f)
@@ -169,11 +183,7 @@ public class CharacterController2D : MonoBehaviour
                 _rb.velocity = new Vector2(velocity_before_dash.x, _rb.velocity.y);
                 dash = false;
                 OnDashEvent.Invoke(false);
-                Volume ppv = GameObject.Find("GlobalPostProcessing").GetComponent<Volume>();
-                ChromaticAberration ca;
-                ppv.profile.TryGet<ChromaticAberration>(out ca);
-                float value = 0.0f;
-                ca.intensity.value = value;
+                setChromaticAberration(0.0f);
             }
             else
             {

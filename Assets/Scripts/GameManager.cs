@@ -27,9 +27,17 @@ public class GameManager : MonoBehaviour
     private float death_player_platform_distance = 10.0f;
     private int score;
 
+    [Header("References")]
+    private PlayerMovementInputHandler playerInputHandler;
+    private CharacterController2D characterController;
+
+
     private void Start()
     {
         LevelGen = LevelGen.GetComponent<LevelGenerator>();
+        playerInputHandler = Player.GetComponent<PlayerMovementInputHandler>();
+        characterController = Player.GetComponent<CharacterController2D>();
+
         countdown_screen.SetActive(true);
         scoreScreen.SetActive(false);
     }
@@ -47,20 +55,20 @@ public class GameManager : MonoBehaviour
                 countdown_over = true;
                 countdown_screen.SetActive(false);
                 scoreScreen.SetActive(true);
-                Player.GetComponent<PlayerMovementInputHandler>().SetMovement(true);
+                playerInputHandler.SetMovement(true);
             }
         }
 
         // Game Over by spikes
+        // Replace with collision, etc
         Transform gcheck = Player.Find("GroundCheck"); // HACK ?
         Transform ccheck = Player.Find("CeilingCheck"); // HACK ?
         BoxCollider2D head = Player.GetComponent<BoxCollider2D>();
         var leg_colliders = Physics2D.OverlapCircleAll(gcheck.position, 0.3f, danger_layer);
         var head_colliders = Physics2D.OverlapCircleAll(ccheck.position, 0.3f, danger_layer);
-        if (Player.GetComponent<PlayerMovementInputHandler>()._enabled && (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled))){
-            Player.GetComponent<PlayerMovementInputHandler>().SetMovement(false);
-            Player.GetComponent<PlayerMovementAnimator>().KillPlayer();
-            Player.GetComponent<CharacterController2D>().die();
+        if (playerInputHandler._enabled && (leg_colliders.Length > 0 || (head_colliders.Length > 0 && head.enabled))){
+            playerInputHandler.SetMovement(false);
+            characterController.die();
             GameOver(); //
         }
 

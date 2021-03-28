@@ -56,7 +56,6 @@ SpriteAtlas:
   - {fileID: -5717145564588284885, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -2242923666598201122, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -794231664657642990, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
-  - {fileID: -7416749949327414578, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: -7256310234036499934, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 6344729218993575264, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
   - {fileID: 2905651674350695459, guid: d68a17b05303a9962bc4b38648f40656, type: 3}
@@ -74,7 +73,6 @@ SpriteAtlas:
   - new_tileset_6
   - new_tileset_5
   - new_tileset_4
-  - new_tileset_16
   - new_tileset_14
   - new_tileset_15
   - new_tileset_12

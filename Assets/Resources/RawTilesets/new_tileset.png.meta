@@ -434,10 +434,10 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: -1}
       physicsShape:
-      - - {x: -4, y: -2}
+      - - {x: -5, y: -3}
         - {x: -6, y: -8}
         - {x: 7, y: -8}
-        - {x: 5, y: -2}
+        - {x: 6, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 32431b29dc2f25820800000000000000
@@ -458,7 +458,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -6, y: 8}
+        - {x: -5, y: 4}
+        - {x: 6, y: 4}
+        - {x: 7, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 14fbdb143e8e3a1d0800000000000000
@@ -479,7 +483,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 4, y: 6}
+        - {x: 4, y: -5}
+        - {x: 8, y: -6}
+        - {x: 8, y: 7}
       tessellationDetail: 0
       bones: []
       spriteID: 22a0938a9486c4b90800000000000000
@@ -500,32 +508,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 7}
+        - {x: -8, y: -6}
+        - {x: -4, y: -5}
+        - {x: -4, y: 6}
       tessellationDetail: 0
       bones: []
       spriteID: 065572edb910d0850800000000000000
       internalID: 6344729218993575264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: new_tileset_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 480
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eca617a7739621990800000000000000
-      internalID: -7416749949327414578
       vertices: []
       indices: 
       edges: []
