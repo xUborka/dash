@@ -40,7 +40,6 @@ public class CharacterController2D : MonoBehaviour
     public UnityEvent OnLandEvent;
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
-    public BoolEvent OnCrouchEvent;
     public BoolEvent OnDashEvent;
 
     [Header("Audio")]
@@ -53,23 +52,18 @@ public class CharacterController2D : MonoBehaviour
     [Header("Post-Processing")]
     private Volume post_processing_volume;
 
-
-    private bool _wasCrouching = false;
     private bool _wasDashing = false;
 
     private bool CanJump => _jumpBufferCounter > 0.0f && _hangTimeCounter > 0.0f;
 
     private float move;
     private bool jump;
-    private bool crouch;
     private bool dash;
 
     private void Start()
     {
         _dashTime = _startDashTime;
         move = 0.0f;
-        jump = false;
-        crouch = false;
         dash = false;
     }
 
@@ -89,7 +83,6 @@ public class CharacterController2D : MonoBehaviour
         playerMovementAnimator = GetComponent<PlayerMovementAnimator>();
 
         OnLandEvent = OnLandEvent ?? new UnityEvent();
-        OnCrouchEvent = OnCrouchEvent ?? new BoolEvent();
         OnDashEvent = OnDashEvent ?? new BoolEvent();
     }
 

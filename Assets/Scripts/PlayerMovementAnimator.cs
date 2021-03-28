@@ -4,7 +4,6 @@ public class PlayerMovementAnimator : MonoBehaviour
 {
     private Animator Animator;
     private bool _jump;
-    private bool _crouch;
     private bool _dash;
 
     public void Awake(){
@@ -28,11 +27,6 @@ public class PlayerMovementAnimator : MonoBehaviour
     public void OnLanding()
     {
         Animator.SetBool("PlayerJumping", false);
-    }
-
-    public void OnCrouching(bool isCrouching)
-    {
-        Animator.SetBool("PlayerCrouching", isCrouching);
     }
 
     public void OnDashing(bool isDashing)

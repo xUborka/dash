@@ -23,8 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject game_over_screen;
     [SerializeField] private LayerMask danger_layer;
     private bool gameHasEnded;
-    private float restart_delay = 2.0f;
-    private float death_player_platform_distance = 10.0f;
+    private float restart_delay = 1.0f;
     private int score;
 
     [Header("References")]
